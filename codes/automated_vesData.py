@@ -1,37 +1,18 @@
-import collect_CPEs
-import collect_CVEs
-import collect_exploits
-import collect_products
-import collect_sols
+import subprocess
 
-# Run the files in the desired order
-collect_CPEs.run()
-collect_CVEs.run()
-collect_exploits.run()
-collect_products.run()
-collect_sols.run()
+# Specify the file to run
+file_1 = "collect_CPEs_updates.py"
+file_2 = "collect_CVES.py"
+file_3 = "collect_exploits.py"
+file_4 = "collect_solutions.py"
+file_5 = "collect_products.py"
 
-# collect_CPEs.py
-def run():
-    # Code to be executed for file1
-    print("Running collect_CPEsfile1.py")
+# Specify the input as a command line argument
+input_name = input("Enter input: ")
 
-# collect_CVEs.py
-def run():
-    # Code to be executed for file2
-    print("Running collect_CVEs.py")
-
-# collect_exploits.py
-def run():
-    # Code to be executed for file3
-    print("collect_exploits.py")
-
-# collect_products.py
-def run():
-    # Code to be executed for file3
-    print("collect_products.py")
-
-# collect_solutions.py
-def run():
-    # Code to be executed for file3
-    print("collect_sols.py")
+# Run the file with the specified input
+subprocess.run(["python", file_1], input=input_name, text=True, check=True)
+subprocess.run(["python", file_2], input=input_name, text=True, check=True)
+subprocess.run(["python", file_3], input=input_name, text=True, check=True)
+subprocess.run(["python", file_4], input=input_name, text=True, check=True)
+subprocess.run(["python", file_5], input=input_name, text=True, check=True)
