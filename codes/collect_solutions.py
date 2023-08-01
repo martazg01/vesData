@@ -7,6 +7,8 @@ import os
 
 from htmldate import find_date
 import time
+#date format changer
+from datetime import datetime
 
 
 def get_nvd_references(cve_id):
@@ -17,7 +19,7 @@ def get_nvd_references(cve_id):
     soup = BeautifulSoup(r.content, "html.parser")
     #print(soup.prettify())
 
-    initial_analysis_date = "N/A"
+    initial_analysis_date = "NA"
     #accesing 'vulnerability change history tables' to later acces date data 
     change_history_table = soup.find_all('table', {"data-testid": "vuln-change-history-table"})
     if len(change_history_table) == 2:
@@ -27,27 +29,32 @@ def get_nvd_references(cve_id):
         cve_modified_date = cve_modified_date.string
         # Convert to datetime object and convert to desired format
         date_obj = datetime.strptime(cve_modified_date, "%m/%d/%Y %I:%M:%S %p")
-        cve_modified_date = date_obj.strftime("%a, %d %b %Y %H:%M:%S GMT")
+        cve_modified_date = date_obj.strftime("%d-%b-%Y")
         #NVD Initial Analysis table
         initial_analysis_table = change_history_table[1]
         initial_analysis_date = soup.find('span', {"data-testid": "vuln-change-history-date-1"})
         initial_analysis_date = initial_analysis_date.string
         # Convert to datetime object and convert to desired format
         date_obj = datetime.strptime(initial_analysis_date, "%m/%d/%Y %I:%M:%S %p")
-        initial_analysis_date = date_obj.strftime("%a, %d %b %Y %H:%M:%S GMT")
+        initial_analysis_date = date_obj.strftime("%d-%b-%Y")
     if len(change_history_table) == 1:
         initial_analysis_table = change_history_table[0]
         initial_analysis_date = soup.find('span', {"data-testid": "vuln-change-history-date-0"})
         initial_analysis_date = initial_analysis_date.string
         # Convert to datetime object and convert to desired format
         date_obj = datetime.strptime(initial_analysis_date, "%m/%d/%Y %I:%M:%S %p")
-        initial_analysis_date = date_obj.strftime("%a, %d %b %Y %H:%M:%S GMT")
+        initial_analysis_date = date_obj.strftime("%d-%b-%Y")
 
     
 
 
     #accesing references table in NVD's HTML structure and counting number of references
     vuln_hyperlinks_table = soup.find('table', {"data-testid": "vuln-hyperlinks-table"})
+
+    if vuln_hyperlinks_table == None:
+        # Skip to the next iteration if the page doesn't exist
+        return
+    
     ref_rows = vuln_hyperlinks_table.find_all('tr')
     ref_num = len(ref_rows)
     #don't count title row
@@ -71,12 +78,14 @@ def get_nvd_references(cve_id):
         #solution reference's date data
 
         #when was this reference/solution source latest modified
-        last_modified = "N/A"
-        page_creation = "N/A"
+        last_modified = "NA"
+        page_creation = "NA"
         #latest update 
         try:
             response = requests.head(ref_url)
             last_modified = response.headers.get("Last-Modified")
+            date_obj = datetime.strptime(last_modified, "%a, %d %b %Y %H:%M:%S GMT")
+            last_modified = date_obj.strftime("%d-%b-%Y")
         #Errors with Certificate hostname mismatch may occur, last-modified header cannot be collected, so this info is not available.
         except:
             pass  # Ignore the SSL error and continue running the code
@@ -87,19 +96,26 @@ def get_nvd_references(cve_id):
             if page_creation != None:
                 # Convert to datetime object and convert to desired format
                 date_obj = datetime.strptime(page_creation, "%Y-%m-%d")
-                page_creation = date_obj.strftime("%a, %d %b %Y")
+                page_creation = date_obj.strftime("%d-%b-%Y")
 
 
         #Errors with url not reachable occur
         except:
             pass  # Ignore the ValueError error and continue running the code
 
+        #Checking if "created" timestamp is correct
+        date_obj_created = datetime.strptime(page_creation, "%d-%b-%Y")
+        date_obj_indexed = datetime.strptime(initial_analysis_date, "%d-%b-%Y")
+        if date_obj_created > date_obj_indexed:
+            page_creation = "NA"
+
         if last_modified == None:
-            last_modified = "N/A"
+            last_modified = "NA"
         if page_creation == None:
-            page_creation = "N/A"
+            page_creation = "NA"
 
 
+        '''
         #creation date, latest update date utilising 'Internet Archive Wayback Machine' database
         url_dates = f"https://archive.org/wayback/available?url={url}"   
         dates = requests.get(url_dates)
@@ -116,8 +132,10 @@ def get_nvd_references(cve_id):
             creation_date = "No data found"
             last_updated_date = "No data found"
 
+        '''   
+
         #check if this reference/solution was updated since NVD's initial analysis
-        nvd_update = "N/A" #initializing variable
+        nvd_update = "NA" #initializing variable
         if len(change_history_table) == 2:
             ref_change_rows = cve_modified_table.find_all('tr')
             change_num = len(ref_change_rows) - 1 #-1 for index purposes
@@ -148,7 +166,7 @@ def get_nvd_references(cve_id):
             ref_type.append(badge.text)
         #no type specified case
         if len(ref_type) == 0:
-            ref_type.append('N/A')
+            ref_type.append('NA')
         
         delimiter = ', '
         clean_ref_type = delimiter.join(ref_type)
@@ -168,13 +186,13 @@ def get_nvd_references(cve_id):
         #dates.append({"create-self": page_creation, "create-archive": creation_date, "last-update-self": last_modified, "latest-update-archive": last_updated_date, "NVD-indexed": initial_analysis_date, "NVD-update": nvd_update})
         dates = ({"created": page_creation, "last-updated": last_modified, "nvd-indexed": initial_analysis_date, "nvd-updated": nvd_update})
         #adding all solution parameters to data structure
-        references.append({"url": ref_url, "type": clean_ref_type, "isPatch:": patch, "timestamps": dates})
+        references.append({"url": ref_url, "type": clean_ref_type, "isPatch:": patch, "solution-timestamps": dates})
         ref_counter += 1
 
 
     return references
 
-
+'''
 #date format changer
 from datetime import datetime
 
@@ -186,6 +204,7 @@ def convert_date(date_string):
     formatted_date = date_obj.strftime("%A, %d-%b-%Y %H:%M:%S GMT")
     
     return formatted_date
+'''
 
 
 #main
@@ -207,11 +226,15 @@ file_path = "./results/"+input_name+"_data.json"
 #file_path = "./results/bosch night camera_data.json"
 
 
-for cve in data["vd"]["vd:vulnerbility"]: 
+for cve in data["vd"]["vd:vulnerability"]: 
+    
 
     #collecting solutions of cve specified 
     solutions = get_nvd_references(cve)
 
+    if solutions == None:
+        # Skip to the next iteration if the page doesn't exist
+        continue
 
     #write new CVE's references to json structure
     # Read the existing JSON file
@@ -226,7 +249,7 @@ for cve in data["vd"]["vd:vulnerbility"]:
     # Create a new dictionary for the solutions
     solution_dict = {}
     for i, solution in enumerate(solutions):
-        solution_key = f"solution_{i+1}"
+        solution_key = f"solution-{i+1}"
         solution_dict[solution_key] = solution
 
     # Assign the solution dictionary to the existing data
