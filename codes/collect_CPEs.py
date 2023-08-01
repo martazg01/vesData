@@ -1,4 +1,5 @@
 import scrapy, html
+import time
 
 from scrapy.crawler import CrawlerProcess
 # from item_cve import CveItem 
@@ -15,7 +16,18 @@ from bs4 import BeautifulSoup
 from lxml import etree
 import json
 
+import sys
+
+#running file individually
 input_name = input()
+
+start_time_total = time.time()  # Record the start time
+# Variables to keep track of request statistics
+total_requests = 0
+request_times = []
+
+# taking input from "automated_vesData.py"
+#input_name = sys.stdin.read().rstrip('\n')
 
 if input_name == "":
     raise Exception("input is invalid")
@@ -32,7 +44,15 @@ for i in range(len(name_split)):
 url = 'https://nvd.nist.gov/products/cpe/search'
 title = 'https://nvd.nist.gov/'
 
+start_time = time.time()  # Record the start time before making the request
+
 r = requests.get(url)
+
+end_time = time.time()  # Record the end time after receiving the response
+ # Update request statistics
+total_requests += 1
+request_time = end_time - start_time
+request_times.append(request_time)
 
 r.encoding = 'utf-8'
 
@@ -51,7 +71,15 @@ formdata = {'type': 'text',
             'keywords': "Amazon Echo"}
 '''
 
+start_time = time.time()  # Record the start time before making the request
+
 r_r = requests.get(search_url)
+
+end_time = time.time()  # Record the end time after receiving the response
+ # Update request statistics
+total_requests += 1
+request_time = end_time - start_time
+request_times.append(request_time)
 
 r_r.encoding = 'utf-8'
 
@@ -67,6 +95,11 @@ html_cpe_search = etree.parse('save_cpe_search_page.html', etree.HTMLParser())
 #maintable = html_0.xpath("//table[@id='maintable']//table[@class='listtable']//tr/td/a")
 #print("maintable: ", maintable)
 pages_url = html_cpe_search.xpath("//div[@class='searchResults']//ul[@class='pagination']/li/a")
+
+#if len(pages_url) == 0:
+#    pages_url.append == html_cpe_search.xpath('/html/body/main/div/div/div[2]/h2/small/a')
+#    print(pages_url)
+
 cpe_link_dict = {}
 for page in pages_url:
     href = page.xpath("@href")
@@ -74,7 +107,15 @@ for page in pages_url:
     print(href)
     #nt("title", check.xpath("@title"))
 
+    start_time = time.time()  # Record the start time before making the request
+
     r_m = requests.get(title+href[0])
+
+    end_time = time.time()  # Record the end time after receiving the response
+    # Update request statistics
+    total_requests += 1
+    request_time = end_time - start_time
+    request_times.append(request_time)
 
     r_m.encoding = 'utf-8'
 
@@ -111,7 +152,15 @@ for cpe_name, cve_urls in cpe_link_dict.items():
     
         cve_link = title + cve_url
         
+        start_time = time.time()  # Record the start time before making the request
+
         r_m = requests.get(cve_link)
+
+        end_time = time.time()  # Record the end time after receiving the response
+        # Update request statistics
+        total_requests += 1
+        request_time = end_time - start_time
+        request_times.append(request_time)
         
         r_m.encoding = 'utf-8'
         
@@ -137,7 +186,17 @@ for cpe_name, cve_urls in cpe_link_dict.items():
         pages_broswer_record = []
         for page_link in pages:
             if page_link not in pages_broswer_record:
+
+                start_time = time.time()  # Record the start time before making the request
+
                 page = requests.get(title+page_link)
+
+                end_time = time.time()  # Record the end time after receiving the response
+                # Update request statistics
+                total_requests += 1
+                request_time = end_time - start_time
+                request_times.append(request_time)
+
                 pages_broswer_record.append(page_link)
                 
                 page.encoding = 'utf-8'
@@ -159,3 +218,15 @@ print("cpe_cves: ", cpe_cves)
 if cpe_cves:
     with open("./results/"+input_name+"_CPEs.json", 'w') as fp:
         json.dump(cpe_cves, fp, indent=4)
+
+
+end_time_total = time.time()  # Record the end time
+# Calculate the time taken
+execution_time_total = end_time_total - start_time_total
+print(f"The file took {execution_time_total:.2f} seconds to run.")
+
+# Calculate the average time per request
+average_request_time = sum(request_times) / total_requests
+
+print(f"Total requests made: {total_requests}")
+print(f"Average time per request: {average_request_time:.2f} seconds")
