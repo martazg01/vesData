@@ -1,4 +1,5 @@
 import scrapy, html
+import time
 
 from scrapy.crawler import CrawlerProcess 
 from multiprocessing import Queue
@@ -15,9 +16,20 @@ from lxml import etree
 import json
 import os
 
+#date format changer
+from datetime import datetime
+
+
+
 title = 'https://nvd.nist.gov/'
 
 input_name = input()
+
+start_time_total = time.time()  # Record the start time
+# Variables to keep track of request statistics
+total_requests = 0
+request_times = []
+
 judge_file_exist = os.path.exists("./results/"+input_name+'_CPEs.json')
 if judge_file_exist:
     cve_store = open("./results/"+input_name+'_CPEs.json', encoding='utf-8')
@@ -50,13 +62,25 @@ for cpe_name, cve_list in cpe_cves.items():
     print("progress: " + str(counter)+"/"+str(total_length))
     cve_details = []
     for cve_url in cve_list:
+        
         if cve_url in cve_record:
             continue
         if cve_url.split("/")[-1] in CVE_dict:
             continue
         cve_record.append(cve_url)
         #print("before get")
+
+        start_time = time.time()  # Record the start time before making the request
+
         cve = requests.get(title+cve_url)
+        print("request made")
+
+        end_time = time.time()  # Record the end time after receiving the response
+        # Update request statistics
+        total_requests += 1
+        request_time = end_time - start_time
+        request_times.append(request_time)
+
         #print("after get")
         cve.encoding = 'utf-8'
         cve_html = cve.text
@@ -193,8 +217,12 @@ for cpe_name, cve_list in cpe_cves.items():
                 for cpes in contain["containers"]:
                     for cpe in cpes["cpes"]: 
                         cpe23Uri = {}
-                        cpe23Uri["cpe23Uri"] = cpe["cpe23Uri"]
-                        cpe23Uri["rangeDescription"] = cpe["rangeDescription"]
+                        cpe23Uri["CPE-version"] = "2.3"
+                        cpe23Uri["CPE-uri"] = cpe["cpe23Uri"]
+                        if cpe["rangeDescription"] == '':
+                            cpe23Uri["CPE-range"] = "NA"
+                        else:
+                            cpe23Uri["CPE-range"] = cpe["rangeDescription"]
                         versions.append(cpe23Uri)
         
         
@@ -206,25 +234,39 @@ for cpe_name, cve_list in cpe_cves.items():
         evaluation = {}
         #info
 
+        
+        #date format
+        date_obj = datetime.strptime(nvd_published_date[0], "%m/%d/%Y")
+        nvd_published_date = date_obj.strftime("%d-%b-%Y")
+        date_obj = datetime.strptime(nvd_last_modified[0], "%m/%d/%Y")
+        nvd_last_modified = date_obj.strftime("%d-%b-%Y")
+
+        #vulnerability-timestamps
+        dates = ({"nvd-published": nvd_published_date, "nvd-last-modified": nvd_last_modified})
+
+
         #item['cve_id'] = cve_id
         basic_info['description'] = description
-        basic_info['nvd-published_date'] = nvd_published_date
-        basic_info['nvd-last-modified'] = nvd_last_modified
+        basic_info['vulnerability-timestamps'] = dates
         basic_info['impact-score'] = impact_score
-        basic_info['exploitability_score'] = exploitability_score
+        basic_info['exploitability-score'] = exploitability_score
         basic_info['cwe-id'] = cwe_id
         basic_info['cwe'] = cwe_name
         basic_info['cwe-link'] = cwe_link
         basic_info['cve-url'] = title+cve_url
-        basic_info["effected-product-versions"] = versions
-        
-        
+
+        # Create a new dictionary for the solutions
+        cpe_dict = {}
+        for i, cpe_num in enumerate(versions):
+            cpe_key = f"CPE-{i+1}"
+            cpe_dict[cpe_key] = cpe_num 
+        basic_info["affected-product-versions"] = cpe_dict
 
         if vuln_vector != []:
             evaluation['ves:exploitability-info'] = {
                 "attack-vector" : attack_vector,
                 "attack-complexity" : attack_complexity,
-                "privilieges-requires" : privilieges_requires,
+                "privileges-requires" : privilieges_requires,
                 "user-interaction" : user_interaction,
                 "scope" : Scope
             }
@@ -358,10 +400,20 @@ if CVE_dict != {}:
     data = {}
     data["vd"] = {}
     data["vd"]["vd:product"] = {}
-    data["vd"]["vd:vulnerbility"] = CVE_dict
+    data["vd"]["vd:vulnerability"] = CVE_dict
     data["vd"]["vd:exploit"] = {}
     data["vd"]["vd:solution"] = {}
     with open("./results/"+input_name+"_CVEs.json", 'w') as fp:
         json.dump(data, fp, indent=4)
 
 
+end_time_total = time.time()  # Record the end time
+# Calculate the time taken
+execution_time_total = end_time_total - start_time_total
+print(f"The file took {execution_time_total:.2f} seconds to run.")
+
+# Calculate the average time per request
+average_request_time = sum(request_times) / total_requests
+
+print(f"Total requests made: {total_requests}")
+print(f"Average time per request: {average_request_time:.2f} seconds")
