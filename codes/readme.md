@@ -38,3 +38,10 @@ python collect_products.py
 ```
 
 Follow the above steps in order to efficiently crawl vulnerability data for your desired product. 
+
+### Alternative Execution: Automated running file
+Run 'automated_vesData.py' to jointly run all required collection files. Input the product name on the terminal and the structured data will be saved in the `results` folder as "product name_vd.json".
+
+```bash
+python automated_vesData.py
+```
