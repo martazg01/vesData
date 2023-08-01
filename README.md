@@ -1,1 +1,3 @@
-# IoT_cybersecurity: IoT vulnerbilities parser and crawler
+# IoT_cybersecurity: IoT vulnerabilities parser and crawler - 'vesData'
+
+'vesData' is a powerful and user-friendly tool designed to automate the process of collecting Vulnerability, Exploit and Solution data from various public sources. With vesData, you can effortlessly crawl through Common Vulnerabilities and Exposures (CVEs) for a specific product name, retrieve essential information like CPEs, CVEs, exploits, and solutions, and restructure the data into a well-organized format. This tool streamlines the data collection process, allowing you to focus on analyzing and mitigating potential security risks efficiently. Simplify your cybersecurity research with vesData and stay ahead of vulnerabilities in your chosen product domain.
