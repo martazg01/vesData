@@ -1,0 +1,2302 @@
+{
+    "ves": {
+        "ves:product": {
+            "product": "android",
+            "manufacturer": "android",
+            "models": {
+                "thetrackr_trackr": {
+                    "vulnerability": [
+                        "CVE-2020-13425"
+                    ]
+                }
+            }
+        },
+        "ves:vulnerability": {
+            "CVE-2014-6750": {
+                "basic-info": {
+                    "description": [
+                        "The $0.99 Kindle Books (aka com.kindle.books.for99) application 6.0 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "27-Sep-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-6750",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-7552": {
+                "basic-info": {
+                    "description": [
+                        "The Zombie Diary (aka com.ezjoy.feelingtouch.zombiediary) application 1.2.2 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "20-Oct-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-7552",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-7745": {
+                "basic-info": {
+                    "description": [
+                        "The Flight Manager (aka com.flightmanager.view) application 4.0 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "21-Oct-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-7745",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-6661": {
+                "basic-info": {
+                    "description": [
+                        "The netease movie (aka com.netease.movie) application 4.7.2 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "23-Sep-2014",
+                        "nvd-last-modified": "26-Sep-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-6661",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-5601": {
+                "basic-info": {
+                    "description": [
+                        "The 1800CONTACTS App (aka com.contacts1800.ecomapp) application 2.7.0 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "08-Sep-2014",
+                        "nvd-last-modified": "09-Sep-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-5601",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2018-13042": {
+                "basic-info": {
+                    "description": [
+                        "The 1Password application 6.8 for Android is affected by a Denial Of Service vulnerability. By starting the activity com.agilebits.onepassword.filling.openyolo.OpenYoloDeleteActivity or com.agilebits.onepassword.filling.openyolo.OpenYoloRetrieveActivity from an external application (since they are exported), it is possible to crash the 1Password instance."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "05-Oct-2018",
+                        "nvd-last-modified": "22-Jan-2020"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 2.2 ",
+                    "cwe-id": "CWE-20",
+                    "cwe": "Improper Input Validation",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/20.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2018-13042",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "High",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "None",
+                        "integrity": "None",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2022-32550": {
+                "basic-info": {
+                    "description": [
+                        "An issue was discovered in AgileBits 1Password, involving the method various 1Password apps and integrations used to create connections to the 1Password service. In specific circumstances, this issue allowed a malicious server to convince a 1Password app or integration it is communicating with the 1Password service."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "15-Jun-2022",
+                        "nvd-last-modified": "24-Jun-2022"
+                    },
+                    "impact-score": " 2.5 ",
+                    "exploitability-score": " 2.2 ",
+                    "cwe-id": "NA",
+                    "cwe": "Insufficient Information",
+                    "cwe-link": [],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2022-32550",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "High",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "Low",
+                        "integrity": "Low",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2014-5842": {
+                "basic-info": {
+                    "description": [
+                        "The 2G Live Tv (aka com.ww2GLiveTv) application 0.9 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Sep-2014",
+                        "nvd-last-modified": "20-Sep-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-5842",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-7735": {
+                "basic-info": {
+                    "description": [
+                        "The Dr. Sheikh Adnan Ibrahim (aka com.amitaff.adnanIbrahim) application 1.0 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "21-Oct-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-7735",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-6726": {
+                "basic-info": {
+                    "description": [
+                        "The 30A (aka com.app30a) application 5.26.2 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "26-Sep-2014",
+                        "nvd-last-modified": "26-Sep-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-6726",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-5838": {
+                "basic-info": {
+                    "description": [
+                        "The Girls Games - Shoes Maker (aka com.g6677.android.shoemaker) application 1.0.1 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Sep-2014",
+                        "nvd-last-modified": "20-Sep-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-5838",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-7766": {
+                "basic-info": {
+                    "description": [
+                        "The 7 Habits Personal Development (aka appinventor.ai_ingka_d_jiw.TheCompleteGuideToApplyingThe7HabitsInHolisticPersonalDevelopment) application 1.0 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "21-Oct-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-7766",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-7428": {
+                "basic-info": {
+                    "description": [
+                        "The 7725.com Three Kingdoms (aka com.platform7725.youai.jiejian) application 2.4 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "19-Oct-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-7428",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2020-5523": {
+                "basic-info": {
+                    "description": [
+                        "Android App 'MyPallete' and some of the Android banking applications based on 'MyPallete' do not verify X.509 certificates from servers, and also do not properly validate certificates with host-mismatch, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "28-Jan-2020",
+                        "nvd-last-modified": "31-Jan-2020"
+                    },
+                    "impact-score": " 5.2 ",
+                    "exploitability-score": " 2.2 ",
+                    "cwe-id": "CWE-295",
+                    "cwe": "Improper Certificate Validation",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/295.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2020-5523",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "High",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2014-1967": {
+                "basic-info": {
+                    "description": [
+                        "The Denny's application before 2.0.1 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "26-Feb-2014",
+                        "nvd-last-modified": "27-Feb-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-1967",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-6707": {
+                "basic-info": {
+                    "description": [
+                        "The 7Sage LSAT Prep - Proctor (aka com.sevensage.lsat) application 2.1.1 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "24-Sep-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-6707",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-5756": {
+                "basic-info": {
+                    "description": [
+                        "The Buy 99 Cents Only Products (aka com.ww99CentsOnlyStores) application 0.1 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Sep-2014",
+                        "nvd-last-modified": "16-Sep-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-5756",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2019-12366": {
+                "basic-info": {
+                    "description": [
+                        "The Nine application through 4.5.3a for Android allows XSS via an event attribute and arbitrary file loading via a src attribute, if the application has the READ_EXTERNAL_STORAGE permission."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "18-Mar-2020",
+                        "nvd-last-modified": "19-Mar-2020"
+                    },
+                    "impact-score": " 2.7 ",
+                    "exploitability-score": " 2.8 ",
+                    "cwe-id": "CWE-79",
+                    "cwe": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/79.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2019-12366",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "Required",
+                        "scope": "Changed"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "Low",
+                        "integrity": "Low",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2017-17689": {
+                "basic-info": {
+                    "description": [
+                        "The S/MIME specification allows a Cipher Block Chaining (CBC) malleability-gadget attack that can indirectly lead to plaintext exfiltration, aka EFAIL."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "16-May-2018",
+                        "nvd-last-modified": "02-Oct-2019"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 2.2 ",
+                    "cwe-id": "NA",
+                    "cwe": "Insufficient Information",
+                    "cwe-link": [],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2017-17689",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "High",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2014-5669": {
+                "basic-info": {
+                    "description": [
+                        "The 9GAG - Funny pics and videos (aka com.ninegag.android.app) application 2.4.10 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "08-Sep-2014",
+                        "nvd-last-modified": "10-Sep-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-5669",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-6736": {
+                "basic-info": {
+                    "description": [
+                        "The EPL Hat Trick (aka com.hat.trick.goal) application 1.0 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "26-Sep-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-6736",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-7701": {
+                "basic-info": {
+                    "description": [
+                        "The DoNotTrackMe - Mobile Privacy (aka com.abine.dnt) application 1.1.8 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "21-Oct-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-7701",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-6782": {
+                "basic-info": {
+                    "description": [
+                        "The Abraham Tours (aka com.mytoursapp.android.app432) application 1.1.2 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "28-Sep-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-6782",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-7566": {
+                "basic-info": {
+                    "description": [
+                        "The Stift Neuburg (aka de.appack.project.neuburg) application 1.1 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "20-Oct-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-7566",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-6797": {
+                "basic-info": {
+                    "description": [
+                        "The Abu Ali Anasheeds (aka com.faapps.abuali_anasheeds) application 1.1 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "28-Sep-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-6797",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2014-7387": {
+                "basic-info": {
+                    "description": [
+                        "The ACC Advocacy Action (aka com.acc.app.android.ui) application 2.0 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "19-Oct-2014",
+                        "nvd-last-modified": "14-Nov-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-7387",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2016-5648": {
+                "basic-info": {
+                    "description": [
+                        "Acer Portal app before 3.9.4.2000 for Android does not properly validate SSL certificates, which allows remote attackers to perform a Man-in-the-middle attack via a crafted SSL certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "08-Jun-2017",
+                        "nvd-last-modified": "09-Oct-2018"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 1.6 ",
+                    "cwe-id": "CWE-295",
+                    "cwe": "Improper Certificate Validation",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/295.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2016-5648",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "High",
+                        "privileges-requires": "None",
+                        "user-interaction": "Required",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2014-5564": {
+                "basic-info": {
+                    "description": [
+                        "The Angry Gran Toss (aka com.aceviral.angrygrantoss) application 1.1.1 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "08-Sep-2014",
+                        "nvd-last-modified": "09-Sep-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-310",
+                    "cwe": "Cryptographic Issues",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/310.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2014-5564",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {}
+            },
+            "CVE-2023-21446": {
+                "basic-info": {
+                    "description": [
+                        "Improper input validation in MyFiles prior to version 12.2.09 in Android R(11), 13.1.03.501 in Android S( 12) and 14.1.00.422 in Android T(13) allows local attacker to access data of MyFiles."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "17-Feb-2023"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-20",
+                    "cwe": "Improper Input Validation",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/20.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21446",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21445": {
+                "basic-info": {
+                    "description": [
+                        "Improper access control vulnerability in MyFiles prior to versions 12.2.09 in Android R(11), 13.1.03.501 in Android S(12) and 14.1.00.422 in Android T(13) allows local attacker to write file with MyFiles privilege via implicit intent."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "17-Feb-2023"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-668",
+                    "cwe": "Exposure of Resource to Wrong Sphere",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/668.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21445",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "Required",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2023-21440": {
+                "basic-info": {
+                    "description": [
+                        "Improper access control vulnerability in WindowManagerService prior to SMR Feb-2023 Release 1 allows attackers to take a screen capture."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-829",
+                    "cwe": "Inclusion of Functionality from Untrusted Control Sphere",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/829.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21440",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "Required",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21439": {
+                "basic-info": {
+                    "description": [
+                        "Improper input validation vulnerability in UwbDataTxStatusEvent prior to SMR Feb-2023 Release 1 allows attackers to launch certain activities."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-20",
+                    "cwe": "Improper Input Validation",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/20.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21439",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2023-21437": {
+                "basic-info": {
+                    "description": [
+                        "Improper access control vulnerability in Phone application prior to SMR Feb-2023 Release 1 allows local attackers to access sensitive information via implicit broadcast."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-287",
+                    "cwe": "Improper Authentication",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/287.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21437",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21436": {
+                "basic-info": {
+                    "description": [
+                        "Improper usage of implicit intent in Contacts prior to SMR Feb-2023 Release 1 allows attacker to get account ID."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 1.4 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "NA",
+                    "cwe": "Insufficient Information",
+                    "cwe-link": [],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21436",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "Low",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21435": {
+                "basic-info": {
+                    "description": [
+                        "Exposure of Sensitive Information vulnerability in Fingerprint TA prior to SMR Feb-2023 Release 1 allows attackers to access the memory address information via log."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-532",
+                    "cwe": "Insertion of Sensitive Information into Log File",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/532.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21435",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21430": {
+                "basic-info": {
+                    "description": [
+                        "An out-of-bound read vulnerability in mapToBuffer function in libSDKRecognitionText.spensdk.samsung.so library prior to SMR JAN-2023 Release 1 allows attacker to cause memory access fault."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-125",
+                    "cwe": "Out-of-bounds Read",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/125.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21430",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2023-21429": {
+                "basic-info": {
+                    "description": [
+                        "Improper usage of implict intent in ePDG prior to SMR JAN-2023 Release 1 allows attacker to access SSID."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 1.4 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "NA",
+                    "cwe": "Insufficient Information",
+                    "cwe-link": [],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21429",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "Low",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21428": {
+                "basic-info": {
+                    "description": [
+                        "Improper input validation vulnerability in TelephonyUI prior to SMR Jan-2023 Release 1 allows attackers to configure Preferred Call. The patch removes unused code."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 1.4 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-20",
+                    "cwe": "Improper Input Validation",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/20.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21428",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "None",
+                        "integrity": "Low",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21427": {
+                "basic-info": {
+                    "description": [
+                        "Improper access control vulnerability in NfcTile prior to SMR Jan-2023 Release 1 allows to attacker to use NFC without user recognition."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 2.8 ",
+                    "cwe-id": "NA",
+                    "cwe": "Insufficient Information",
+                    "cwe-link": [],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21427",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Adjacent Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "None",
+                        "integrity": "High",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21425": {
+                "basic-info": {
+                    "description": [
+                        "Improper access control vulnerability in telecom application prior to SMR JAN-2023 Release 1 allows local attackers to get sensitive information."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-287",
+                    "cwe": "Improper Authentication",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/287.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21425",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21424": {
+                "basic-info": {
+                    "description": [
+                        "Improper Handling of Insufficient Permissions or Privileges vulnerability in SemChameleonHelper prior to SMR Jan-2023 Release 1 allows attacker to modify network related values, network code, carrier id and operator brand."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 1.4 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-863",
+                    "cwe": "Incorrect Authorization",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/863.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21424",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "None",
+                        "integrity": "Low",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21423": {
+                "basic-info": {
+                    "description": [
+                        "Improper authorization vulnerability in ChnFileShareKit prior to SMR Jan-2023 Release 1 allows attacker to control BLE advertising without permission using unprotected action."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-863",
+                    "cwe": "Incorrect Authorization",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/863.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21423",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "None",
+                        "integrity": "High",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2023-21421": {
+                "basic-info": {
+                    "description": [
+                        "Improper Handling of Insufficient Permissions or Privileges vulnerability in KnoxCustomManagerService prior to SMR Jan-2023 Release 1 allows attacker to access device SIM PIN."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "09-Feb-2023",
+                        "nvd-last-modified": "21-Feb-2023"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-269",
+                    "cwe": "Improper Privilege Management",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/269.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2023-21421",
+                    "affected-product-versions": {}
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2020-13425": {
+                "basic-info": {
+                    "description": [
+                        "TrackR devices through 2020-05-06 allow attackers to trigger the Beep (aka alarm) feature, which will eventually cause a denial of service when battery capacity is exhausted."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "23-May-2020",
+                        "nvd-last-modified": "26-May-2020"
+                    },
+                    "impact-score": " 4.2 ",
+                    "exploitability-score": " 2.8 ",
+                    "cwe-id": "CWE-862",
+                    "cwe": "Missing Authorization",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/862.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2020-13425",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:thetrackr:trackr_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 2020-05-06 "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:thetrackr:trackr:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Adjacent Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "None",
+                        "integrity": "Low",
+                        "availability": "High"
+                    }
+                }
+            }
+        },
+        "ves:exploit": {
+            "46165": {
+                "exploit-title": "1Password < 7.0 - Denial of Service",
+                "platform": "Android",
+                "exploit-timestamps": {
+                    "created": "NA",
+                    "edb-published": "15-Jan-2019"
+                },
+                "cve": [
+                    "CVE-2018-13042"
+                ],
+                "content": [
+                    "\"b'############\\\\r\\\nDescription\\\\r\\\n############\\\\r\\\n\\\\r\\\n\\\\r\\\nThe 1Password application < 7.0 for Android is affected by a Denial Of\\\\r\\\nService vulnerability. By starting the activity\\\\r\\\ncom.agilebits.onepassword.filling.openyolo.OpenYoloDeleteActivity or\\\\r\\\ncom.agilebits.onepassword.filling.openyolo.OpenYoloRetrieveActivity from an\\\\r\\\nexternal application (since they are exported), it is possible to crash the\\\\r\\\n1Password instance.\\\\r\\\n\\\\r\\\n \\\\r\\\n\\\\r\\\n############\\\\r\\\nPoc\\\\r\\\n############\\\\r\\\n\\\\r\\\n \\\\r\\\n\\\\r\\\nTo invoke the exported activity and crash the app, it is possible\\\\r\\\nto use Drozer:\\\\r\\\n\\\\r\\\n \\\\r\\\n\\\\r\\\nrun app.activity.start --component com.agilebits.onepassword\\\\r\\\ncom.agilebits.onepassword.filling.openyolo.OpenYoloDeleteActivity\\\\r\\\n\\\\r\\\n\\\\r\\\n\\\\r\\\n############\\\\r\\\nAffected Components\\\\r\\\n############\\\\r\\\n\\\\r\\\n\\\\r\\\ncom.agilebits.onepassword.filling.openyolo.OpenYoloDeleteActivity\\\\r\\\ncom.agilebits.onepassword.filling.openyolo.OpenYoloRetrieveActivity\\\\r\\\n\\\\r\\\n \\\\r\\\n\\\\r\\\n############\\\\r\\\nDisclosure timeline\\\\r\\\n############\\\\r\\\n\\\\r\\\n\\\\r\\\n2018-07-27 Contacting 1Password\\\\r\\\n\\\\r\\\n2018-07-30 1Password acknowledges the vulnerability\\\\r\\\n\\\\r\\\n2018-08-22 The vulnerability is fixed and made public\\\\r\\\n\\\\r\\\n\\\\r\\\n\\\\r\\\nValerio Brussani (@val_brux)'\""
+                ]
+            }
+        },
+        "ves:solution": {
+            "CVE-2014-6750": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-7552": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-7745": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-6661": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "26-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "26-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-5601": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "09-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "09-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2018-13042": {
+                "solution-1": {
+                    "url": "https://app-updates.agilebits.com/product_history/OPA4",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "04-Aug-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://www.exploit-db.com/exploits/46165/",
+                    "type": "Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://www.valbrux.it/blog/2019/01/22/cve-2018-13042-1password-android-7-0-denial-of-service/",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "22-Jan-2019",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2022-32550": {
+                "solution-1": {
+                    "url": "https://support.1password.com/kb/202206/",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "03-Jun-2022",
+                        "last-updated": "17-Aug-2023",
+                        "nvd-indexed": "24-Jun-2022",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-5842": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "20-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "20-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-7735": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-6726": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "26-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "26-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-5838": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "20-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "20-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-7766": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-7428": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2020-5523": {
+                "solution-1": {
+                    "url": "http://jvn.jp/en/jp/JVN28845872/index.html",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "28-Jan-2020",
+                        "last-updated": "28-Jan-2020",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "http://www.dokodemobank.ne.jp/info_20200128_bankingapp.html",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://www.77bank.co.jp/pdf/oshirase/20012801_appvulnerability.pdf",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "27-Jan-2020",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-4": {
+                    "url": "https://www.ashikagabank.co.jp/appbanking/pdf/oshirase.pdf",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "24-May-2022",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-5": {
+                    "url": "https://www.hokkaidobank.co.jp/common/dat/2020/0120/15795047141946146699.pdf",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "20-Jan-2020",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-6": {
+                    "url": "https://www.hokugin.co.jp/info/archives/personal/2020/1913.html",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "01-Jan-2020",
+                        "last-updated": "NA",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-7": {
+                    "url": "https://www.naganobank.co.jp/soshiki/2/app-ssl.html",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "31-Jul-2023",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-8": {
+                    "url": "https://www.shikokubank.co.jp/info/apps20200128.html",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-9": {
+                    "url": "https://www.sihd-bk.jp/common_v2/pdf/20200127.pdf",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "23-Sep-2020",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-10": {
+                    "url": "https://www.tohoku-bank.co.jp/news/topics/200128_applissl.html",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "01-Jan-2020",
+                        "last-updated": "NA",
+                        "nvd-indexed": "31-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-1967": {
+                "solution-1": {
+                    "url": "http://jvn.jp/en/jp/JVN48810179/index.html",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "26-Feb-2014",
+                        "last-updated": "16-May-2016",
+                        "nvd-indexed": "27-Feb-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "http://jvndb.jvn.jp/jvndb/JVNDB-2014-000022",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "27-Feb-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://play.google.com/store/apps/details?id=jp.denimoba",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "27-Feb-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-6707": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-5756": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "16-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "16-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2019-12366": {
+                "solution-1": {
+                    "url": "http://release-notes.9folders.com/",
+                    "type": "Release Notes, Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "24-Aug-2018",
+                        "last-updated": "NA",
+                        "nvd-indexed": "19-Mar-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://gubello.me",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "06-Aug-2023",
+                        "nvd-indexed": "19-Mar-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://www.gubello.me/blog/javascript-injection-in-six-android-mail-clients/",
+                    "type": "Exploit, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "15-Feb-2020",
+                        "last-updated": "NA",
+                        "nvd-indexed": "19-Mar-2020",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2017-17689": {
+                "solution-1": {
+                    "url": "http://www.securityfocus.com/bid/104165",
+                    "type": "Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://efail.de",
+                    "type": "Exploit, Mitigation, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "14-May-2018",
+                        "last-updated": "29-Sep-2019",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://news.ycombinator.com/item?id=17066419",
+                    "type": "Issue Tracking, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "14-May-2018",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-4": {
+                    "url": "https://pastebin.com/gNCc8aYm",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "15-May-2018",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-5": {
+                    "url": "https://twitter.com/matthew_d_green/status/996371541591019520",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-6": {
+                    "url": "https://www.synology.com/support/security/Synology_SA_18_22",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "15-May-2018",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-5669": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "10-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "10-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-6736": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-7701": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-6782": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-7566": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-6797": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-7387": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "14-Nov-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2016-5648": {
+                "solution-1": {
+                    "url": "http://packetstormsecurity.com/files/137775/Acer-Portal-Android-Application-3.9.3.2006-Man-In-The-Middle.html",
+                    "type": "Exploit, Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "05-Jul-2016",
+                        "last-updated": "NA",
+                        "nvd-indexed": "15-Jun-2017",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "http://seclists.org/fulldisclosure/2016/Jul/17",
+                    "type": "Mailing List, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "09-Apr-2000",
+                        "last-updated": "NA",
+                        "nvd-indexed": "15-Jun-2017",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "http://www.securityfocus.com/archive/1/538851/100/0/threaded",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "15-Jun-2017",
+                        "nvd-updated": "09-Oct-2018"
+                    }
+                },
+                "solution-4": {
+                    "url": "https://www.kb.cert.org/vuls/id/690343",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "05-Jul-2016",
+                        "last-updated": "01-Feb-2022",
+                        "nvd-indexed": "15-Jun-2017",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2014-5564": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/582497",
+                    "type": "Third Party Advisory, US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "06-Aug-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "09-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "10-Mar-2014",
+                        "last-updated": "NA",
+                        "nvd-indexed": "09-Sep-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21446": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=02",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "17-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21445": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=02",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "17-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21440": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=02",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21439": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=02",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21437": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=02",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21436": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=02",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21435": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=02",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21430": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=01",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21429": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=01",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21428": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=01",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21427": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=01",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21425": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=01",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21424": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=01",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21423": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=01",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2023-21421": {
+                "solution-1": {
+                    "url": "https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=01",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Jan-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "21-Feb-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2020-13425": {
+                "solution-1": {
+                    "url": "https://secretdiary.ninja/index.php/2020/05/06/trackr-users-private-information-exposed/",
+                    "type": "Exploit, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "26-May-2020",
+                        "nvd-updated": "NA"
+                    }
+                }
+            }
+        }
+    }
+}

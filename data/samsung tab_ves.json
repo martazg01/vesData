@@ -1,0 +1,121 @@
+{
+    "ves": {
+        "ves:product": {
+            "product": "samsung tab",
+            "manufacturer": "samsung",
+            "models": {
+                "google_android": {
+                    "vulnerability": [
+                        "CVE-2020-35693"
+                    ]
+                },
+                "samsung_galaxy": {
+                    "vulnerability": [
+                        "CVE-2020-35693"
+                    ]
+                },
+                "samsung_j2": {
+                    "vulnerability": [
+                        "CVE-2020-35693"
+                    ]
+                },
+                "samsung_tab": {
+                    "vulnerability": [
+                        "CVE-2020-35693"
+                    ]
+                }
+            }
+        },
+        "ves:vulnerability": {
+            "CVE-2020-35693": {
+                "basic-info": {
+                    "description": [
+                        "On some Samsung phones and tablets running Android through 7.1.1, it is possible for an attacker-controlled Bluetooth Low Energy (BLE) device to pair silently with a vulnerable target device, without any user interaction, when the target device's Bluetooth is on, and it is running an app that offers a connectable BLE advertisement. An example of such an app could be a Bluetooth-based contact tracing app, such as Australia's COVIDSafe app, Singapore's TraceTogether app, or France's TousAntiCovid (formerly StopCovid). As part of the pairing process, two pieces (among others) of personally identifiable information are exchanged: the Identity Address of the Bluetooth adapter of the target device, and its associated Identity Resolving Key (IRK). Either one of these identifiers can be used to perform re-identification of the target device for long term tracking. The list of affected devices includes (but is not limited to): Galaxy Note 5, Galaxy S6 Edge, Galaxy A3, Tab A (2017), J2 Pro (2018), Galaxy Note 4, and Galaxy S5."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "24-Dec-2020",
+                        "nvd-last-modified": "31-Dec-2020"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 2.8 ",
+                    "cwe-id": "NA",
+                    "cwe": "Insufficient Information",
+                    "cwe-link": [],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2020-35693",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:google:android:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 7.1.1 "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:samsung:galaxy_a3:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-3": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:samsung:galaxy_note_4:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-4": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:samsung:galaxy_note_5:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-5": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:samsung:galaxy_s5:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-6": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:samsung:galaxy_s6_edge:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-7": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:samsung:j2_pro_\\(2018\\):-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-8": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:samsung:tab_a_\\(2017\\):-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Adjacent Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            }
+        },
+        "ves:exploit": {},
+        "ves:solution": {
+            "CVE-2020-35693": {
+                "solution-1": {
+                    "url": "https://github.com/alwentiu/contact-tracing-research/blob/main/samsung.pdf",
+                    "type": "Exploit, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "22-Dec-2020",
+                        "last-updated": "NA",
+                        "nvd-indexed": "31-Dec-2020",
+                        "nvd-updated": "NA"
+                    }
+                }
+            }
+        }
+    }
+}
