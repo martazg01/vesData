@@ -1,0 +1,78 @@
+{
+    "ves": {
+        "ves:product": {
+            "product": "netatmo camera",
+            "manufacturer": "netatmo",
+            "models": {
+                "netatmo_smart": {
+                    "vulnerability": [
+                        "CVE-2019-17101"
+                    ]
+                }
+            }
+        },
+        "ves:vulnerability": {
+            "CVE-2019-17101": {
+                "basic-info": {
+                    "description": [
+                        "Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability in firmware versions prior to x.xx of Netatmo Smart Indoor Camera allows an attacker to execute commands on the device. This issue affects: Netatmo Smart Indoor Camera version and prior versions."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "23-Apr-2020",
+                        "nvd-last-modified": "29-Oct-2021"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 0.8 ",
+                    "cwe-id": "CWE-77",
+                    "cwe": "Improper Neutralization of Special Elements used in a Command ('Command Injection')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/77.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2019-17101",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:netatmo:smart_indoor_camera_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (excluding) 4.2.5 "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:netatmo:smart_indoor_camera:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "High",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            }
+        },
+        "ves:exploit": {},
+        "ves:solution": {
+            "CVE-2019-17101": {
+                "solution-1": {
+                    "url": "https://labs.bitdefender.com/2020/04/cracking-the-netatmo-smart-indoor-security-camera/",
+                    "type": "Exploit, Vendor Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "30-Apr-2020",
+                        "nvd-updated": "NA"
+                    }
+                }
+            }
+        }
+    }
+}

