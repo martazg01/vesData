@@ -41,39 +41,7 @@ pip install scrapy
 
 
 ## Usage
-To run the tool, execute the following steps with the respective product name you want to obtain the cyber data for. 
-- Step 1: `collect_CPEs.py` to fetch the CPEs (Common Platform Enumeration) for the specified product name. When running `collect_CPEs.py`, provide the product name as input in the terminal.
-  
-```bash
-python3 collect_CPEs.py
-```
-
-- Step 2: `collect_CVEs.py` to retrieve the CVEs for the saved CPEs in the `results` folder corresponding to the given product. Input the product name on the terminal when running `collect_CVEs.py`.
-
-```bash
-python3 collect_CVEs.py
-```
-
-- Step 3: `collect_exploits.py` to obtain the exploits for the saved CPEs in the `results` folder associated with the given product. Input the product name on the terminal when running `collect_exploits.py`. 
-
-```bash
-python3 collect_exploits.py
-```
-
-- Step 4: `collect_solutions.py` to fetch the solutions for the saved CVEs in the `results` folder for the given product. Input the product name on the terminal when executing `collect_solutions.py`.
-
-```bash
-python3 collect_solutions.py
-```
-
-- Step 5: `collect_products.py` to merge all product information into the final strcuture. The restructured data will be saved in the `results` folder as "product name_vd.json".
-
-```bash
-python3 collect_products.py
-```
-
-- Alternative Execution: Automated running file
-Run 'automated_vesData.py' to jointly run all required collection files. Input the product name on the terminal and the structured data will be saved in the `results` folder as "product name_vd.json".
+To run the tool, execute automated_vesData.py. This jointly runs all required collection files. Input the product name on the terminal and the structured data will be saved in the `results` folder as "product name_vd.json".
 
 ```bash
 python3 automated_vesData.py
