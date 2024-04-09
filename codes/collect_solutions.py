@@ -10,6 +10,7 @@ import time
 #date format changer
 from datetime import datetime
 
+import sys
 
 def get_nvd_references(cve_id):
     # Construct the URL for the NVD page for the given CVE-ID
@@ -98,16 +99,17 @@ def get_nvd_references(cve_id):
                 date_obj = datetime.strptime(page_creation, "%Y-%m-%d")
                 page_creation = date_obj.strftime("%d-%b-%Y")
 
+                #Checking if "created" timestamp is correct
+                date_obj_created = datetime.strptime(page_creation, "%d-%b-%Y")
+                date_obj_indexed = datetime.strptime(initial_analysis_date, "%d-%b-%Y")
+                if date_obj_created > date_obj_indexed:
+                    page_creation = "NA"
+
 
         #Errors with url not reachable occur
         except:
             pass  # Ignore the ValueError error and continue running the code
 
-        #Checking if "created" timestamp is correct
-        date_obj_created = datetime.strptime(page_creation, "%d-%b-%Y")
-        date_obj_indexed = datetime.strptime(initial_analysis_date, "%d-%b-%Y")
-        if date_obj_created > date_obj_indexed:
-            page_creation = "NA"
 
         if last_modified == None:
             last_modified = "NA"
@@ -211,7 +213,13 @@ def convert_date(date_string):
 
 
 #product CVE search
-input_name = input()
+
+#running file individually
+#input_name = input()
+
+# taking input from "automated_vesData.py"
+input_name = sys.argv[1]
+
 judge_file_exist = os.path.exists("./results/"+input_name+'_CVEs.json')
 if judge_file_exist:
     cve_store = open("./results/"+input_name+'_CVEs.json', encoding='utf-8')
@@ -226,7 +234,7 @@ file_path = "./results/"+input_name+"_data.json"
 #file_path = "./results/bosch night camera_data.json"
 
 
-for cve in data["vd"]["vd:vulnerability"]: 
+for cve in data["ves"]["ves:vulnerability"]: 
     
 
     #collecting solutions of cve specified 
@@ -243,8 +251,8 @@ for cve in data["vd"]["vd:vulnerability"]:
         #sols_text["vd:solutions"] = existing_data
 
     # Create a dictionary for the current CVE if it doesn't exist
-    if cve not in existing_data["vd"]["vd:solution"]:
-        existing_data["vd"]["vd:solution"][cve] = {}
+    if cve not in existing_data["ves"]["ves:solution"]:
+        existing_data["ves"]["ves:solution"][cve] = {}
 
     # Create a new dictionary for the solutions
     solution_dict = {}
@@ -253,7 +261,7 @@ for cve in data["vd"]["vd:vulnerability"]:
         solution_dict[solution_key] = solution
 
     # Assign the solution dictionary to the existing data
-    existing_data["vd"]["vd:solution"][cve] = solution_dict
+    existing_data["ves"]["ves:solution"][cve] = solution_dict
 
 
     # Write the modified JSON data back to the JSON file

@@ -1,4 +1,5 @@
 import scrapy, html
+import sys
 
 from scrapy.crawler import CrawlerProcess
 #from item_cve import CveItem 
@@ -24,7 +25,12 @@ import os
 cve_map = open('CVE_edb_map.json', encoding='utf-8')
 map = json.load(cve_map)
 
-input_name = input()
+#running file individually
+#input_name = input()
+
+# taking input from "automated_vesData.py"
+input_name = sys.argv[1]
+
 judge_file_exist = os.path.exists("./results/"+input_name+'_data.json')
 if judge_file_exist:
     cve_store = open("./results/"+input_name+'_data.json', encoding='utf-8')
@@ -32,16 +38,16 @@ if judge_file_exist:
 else:
     print("Not exist such file!")
     exit(1)
-new_dct = {"vd":{}}
-new_dct["vd"]["vd:product"] = {}
-new_dct["vd"]["vd:product"]['product'] = input_name
-new_dct["vd"]["vd:product"]['manufacturer'] = input_name.split(" ")[0]
-new_dct["vd"]["vd:product"]['models'] = {}
+new_dct = {"ves":{}}
+new_dct["ves"]["ves:product"] = {}
+new_dct["ves"]["ves:product"]['product'] = input_name
+new_dct["ves"]["ves:product"]['manufacturer'] = input_name.split(" ")[0]
+new_dct["ves"]["ves:product"]['models'] = {}
 name_record = []
-for cve in data["vd"]["vd:vulnerbility"]: 
-    effected_product_list = data["vd"]["vd:vulnerbility"][cve]["basic-info"]["effected-product-versions"]
-    for p_dct in effected_product_list:
-        effected_product_name = p_dct["cpe23Uri"].split("_")
+for cve in data["ves"]["ves:vulnerability"]: 
+    effected_product_list = data["ves"]["ves:vulnerability"][cve]["basic-info"]["affected-product-versions"]
+    for _, p_dct in effected_product_list.items():
+        effected_product_name = p_dct["CPE-uri"].split("_")
         if effected_product_name == []:
             continue
         name_lst = effected_product_name[0].split(":")
@@ -70,26 +76,26 @@ for cve in data["vd"]["vd:vulnerbility"]:
             '''
             #dct["manufacture"] = p_dct["cpe23Uri"].split(":")[3]
             #dct["models"] = {}
-            dct["vulnerbility"] = [cve]
-            #if cve in map.keys():
-            #    dct["exploit"] = []
-            #    for i in map[cve]:
-            #        dct["exploit"].append(i)
-            new_dct["vd"]["vd:product"]['models'][name] = dct
+            dct["vulnerability"] = [cve]
+            if cve in map.keys():
+                dct["exploit"] = []
+                for i in map[cve]:
+                    dct["exploit"].append(i)
+            new_dct["ves"]["ves:product"]['models'][name] = dct
         else:
-            if cve not in new_dct["vd"]["vd:product"]['models'][name]["vulnerbility"]:
-                new_dct["vd"]["vd:product"]['models'][name]["vulnerbility"].append(cve)
-            #if cve in map.keys():
-            #    if "exploit" not in new_dct["vd"]["vd:product"]['models'][name]:
-            #        new_dct["vd"]["vd:product"]['models'][name]["exploit"] = []
-            #    for i in map[cve]:
-            #        if i not in new_dct["vd"]["vd:product"]['models'][name]["exploit"]:
-            #            new_dct["vd"]["vd:product"]['models'][name]["exploit"].append(i)
+            if cve not in new_dct["ves"]["ves:product"]['models'][name]["vulnerability"]:
+                new_dct["ves"]["ves:product"]['models'][name]["vulnerability"].append(cve)
+            if cve in map.keys():
+                if "exploit" not in new_dct["ves"]["ves:product"]['models'][name]:
+                    new_dct["ves"]["ves:product"]['models'][name]["exploit"] = []
+                for i in map[cve]:
+                    if i not in new_dct["ves"]["ves:product"]['models'][name]["exploit"]:
+                        new_dct["ves"]["ves:product"]['models'][name]["exploit"].append(i)
                     #print("exploit: ", data["vd"]["vd:exploit"][map[cve]])
 
 
-new_dct["vd"]["vd:vulnerbility"] = data["vd"]["vd:vulnerbility"]
-new_dct["vd"]["vd:exploit"] = data["vd"]["vd:exploit"]
-new_dct["vd"]["vd:solution"] = data["vd"]["vd:solution"]
-with open("./results/"+input_name+'_vd.json', 'w') as fp:
+new_dct["ves"]["ves:vulnerability"] = data["ves"]["ves:vulnerability"]
+new_dct["ves"]["ves:exploit"] = data["ves"]["ves:exploit"]
+new_dct["ves"]["ves:solution"] = data["ves"]["ves:solution"]
+with open("./results/"+input_name+'_ves.json', 'w') as fp:
     json.dump(new_dct, fp, indent=4)

@@ -19,11 +19,15 @@ import os
 #date format changer
 from datetime import datetime
 
-
+import sys
 
 title = 'https://nvd.nist.gov/'
 
-input_name = input()
+#running file individually
+#input_name = input()
+
+# taking input from "automated_vesData.py"
+input_name = sys.argv[1]
 
 start_time_total = time.time()  # Record the start time
 # Variables to keep track of request statistics
@@ -179,11 +183,12 @@ for cpe_name, cve_list in cpe_cves.items():
             else:
                 Availability_impact = "Unknown"
 
-
+        cwe_id = 'NA'
         if cwe_find:
             cwe_name = cwe_find[-1]
         if cwe_id_find:
             cwe_id = cwe_id_find[0]
+        
 
         #print("cwe: ", cwe_find)
         #print("cwe link: ", cwe_link)
@@ -398,11 +403,11 @@ for cpe_name, cve_list in cpe_cves.items():
 
 if CVE_dict != {}:
     data = {}
-    data["vd"] = {}
-    data["vd"]["vd:product"] = {}
-    data["vd"]["vd:vulnerability"] = CVE_dict
-    data["vd"]["vd:exploit"] = {}
-    data["vd"]["vd:solution"] = {}
+    data["ves"] = {}
+    data["ves"]["ves:product"] = {}
+    data["ves"]["ves:vulnerability"] = CVE_dict
+    data["ves"]["ves:exploit"] = {}
+    data["ves"]["ves:solution"] = {}
     with open("./results/"+input_name+"_CVEs.json", 'w') as fp:
         json.dump(data, fp, indent=4)
 
