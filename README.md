@@ -50,4 +50,4 @@ python3 automated_vesData.py
 
 ## Cite Our Tool
 <a id="1">[1]</a> 
-Marta Zumaquero Gil, Zhibo Hu, Minzhao Lyu, Gustavo Batista and Hassan Habibi Gharakheili, "Systematic Mapping and Temporal Reasoning of IoT Cyber Risks using Structured Data", IFIP Networking, Thessaloniki, Greece, Jun 2024. 
+Marta Zumaquero Gil, Zhibo Hu, Minzhao Lyu, Gustavo Batista and Hassan Habibi Gharakheili, "Systematic Mapping and Temporal Reasoning of IoT Cyber Risks using Structured Data", AINTEC, Sydney, Australia, Aug 2024. 
