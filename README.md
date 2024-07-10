@@ -48,7 +48,7 @@ python3 automated_vesData.py
 ```
 
 ## License
-# SPDX-License-Identifier: MIT-0
+### SPDX-License-Identifier: MIT-0
 
 Copyright 2024 [IoT Traffic Analytics Research Group, School of EE&T, UNSW Sydney](https://iotanalytics.unsw.edu.au/).
 
